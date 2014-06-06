@@ -5,6 +5,7 @@
  * Date: 2014-06-06
  * Vertion: Beta
  * Github: https://github.com/willian12345/sasshat
+ * Sass-vertion: Sass@3.7.7
  */
 $isMicorsoftIE: false !default
 @mixin prefixer($property, $value, $valPrefix: false)
@@ -91,6 +92,11 @@ $isMicorsoftIE: false !default
 	// amount
 	+prefixer(filter, brightness($lengh))
 //C
+@mixin calc($prop, $value)
+	// Value must be have space between each operations
+	#{$prop}: -webkit-calc(#{$value})
+	#{$prop}: -moz-calc(#{$value})
+	#{$prop}: calc(#{$value})
 @mixin column-count($value)
 	+prefixer(column-count, $value)
 @mixin column-gap($value)

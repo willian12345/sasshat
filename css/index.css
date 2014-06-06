@@ -4,10 +4,8 @@
  * Date: 2014-06-06
  * Vertion: Beta
  * Github: https://github.com/willian12345/sasshat
+ * Sass-vertion: Sass@3.7.7
  */
-.hello {
-  width: 100px; }
-
 .hi {
   width: 100px; }
 
@@ -64,6 +62,9 @@ input::input-placeholder {
   color: red; }
 
 #header {
+  width: -webkit-calc(100% - 20px);
+  width: -moz-calc(100% - 20px);
+  width: calc(100% - 20px);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
