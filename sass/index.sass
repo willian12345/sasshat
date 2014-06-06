@@ -1,31 +1,66 @@
 @import 'sasshat.sass'
 @import 'sasshat.scss'
-.hi
-	width: 100px
-+keyframes(show)
-	0%
-		+transform(scale(1,1))
-		background: red
-		// opacity: 0
-	100%
-		background: green
-		// opacity: 1
-+placeholder()
-	color: red
+// .hi
+// 	width: 100px
+// +keyframes(show)
+// 	0%
+// 		+transform(scale(1,1))
+// 		background: red
+// 		// opacity: 0
+// 	100%
+// 		background: green
+// 		// opacity: 1
+// +placeholder()
+// 	color: red
+
+
 
 #header
-	+calc(width, "100% - 20px")
-	+border-radius(5px)
-	+box-shadow(5px 5px 5px #000,-5px -5px 0 #ff0000, inset 2px 2px 4px 1px yellow)
-	+background-size(40%)
-	+border-radius(10px 0 10px)
-	+brightness(.5)
+	// +calc(width, "100% - 20px")
+	// +border-radius(5px)
+	// +box-shadow(5px 5px 5px #000,-5px -5px 0 #ff0000, inset 2px 2px 4px 1px yellow)
+	// +background-size(40%)
+	// +border-radius(10px 0 10px)
+	// +brightness(.5)
 	// +transform(scale(1,1) skewY(10deg))
 	// +scale(1.5, 1.5)
 	// +transform-style(preserve-3d)
 	// +transition(-webkit-show .3s ease)
 	// +transition(all 3s ease)
-	+transition-property(transform)
-	+display(flex)
-	+drop-shadow(0 1px 5px rgba(0,0,0,.5))
-	+filter(grayscale(0.5) blur(10px))
+	// +transition-property(transform)
+	// +display(flex)
+	// +drop-shadow(0 1px 5px rgba(0,0,0,.5))
+	// +filter(grayscale(0.5) blur(10px))
+
+
+
++createSlideFrame(slideFromLeft, left, 1000px)
++createSlideFrame(slideFromRight, right, -1000px)
++createSlideFrame(slideFromTop, top, -1000px)
++createSlideFrame(slideFromBottom, bottom, 1000px)
++createOpacityFrame(opacityList)
+
+.list
+	margin: 0
+	padding: 0
+	width: 100px
+	li
+		margin: 0
+		padding: 0
+		width: 100px
+		height: 40px
+		border-bottom: 1px solid red
+		// +translateY(1000px)
+		opacity: 0
+		background: green
+		list-style: none
+	// +playByStep(li,slideFromBottom, 1, 10, .5s, .5, .1, ease)
+	// +playByStep($elem:li,$frameName:slideFromTop, $start:5, $end:1)
+	// +playByStep($elem:li,$frameName:slideFromLeft, $start:1, $end:5, $duration:.5s)
+	// +playByStep($elem:li,$frameName:slideFromBottom, $start:1, $end:5, $duration:.5s, $delay:.5, $delayInterval:.2, $timmingFuc:ease)
+// +playByStep(".list li",slideFromBottom)
++playByStep(".list li",opacityList, 10, 1)
+
+
+
+
