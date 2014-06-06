@@ -1,0 +1,30 @@
+@import 'sasshat.sass'
+@import 'sasshat.scss'
+.hi
+	width: 100px
++keyframes(show)
+	0%
+		+transform(scale(1,1))
+		background: red
+		// opacity: 0
+	100%
+		background: green
+		// opacity: 1
++placeholder()
+	color: red
+
+#header
+	+border-radius(5px)
+	+box-shadow(5px 5px 5px #000,-5px -5px 0 #ff0000, inset 2px 2px 4px 1px yellow)
+	+background-size(40%)
+	+border-radius(10px 0 10px)
+	+brightness(.5)
+	// +transform(scale(1,1) skewY(10deg))
+	// +scale(1.5, 1.5)
+	// +transform-style(preserve-3d)
+	// +transition(-webkit-show .3s ease)
+	// +transition(all 3s ease)
+	+transition-property(transform)
+	+display(flex)
+	+drop-shadow(0 1px 5px rgba(0,0,0,.5))
+	+filter(grayscale(0.5) blur(10px))
