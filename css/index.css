@@ -135,8 +135,4 @@
  * Sass-vertion: Sass@3.7.7
  */
 #header {
-  height: 1px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px; }
+  height: 1px; }
