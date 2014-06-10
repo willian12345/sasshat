@@ -54,10 +54,7 @@ $isMicorsoftIE: false !default
 @mixin appearance($value)
 	+prefixer(appearance, $value)
 
-
 // B
-@mixin border-radius($value)
-	+prefixer(border-radius, $value)
 @mixin box-shadow($shadow...)
 	+prefixer(box-shadow, $shadow)
 	@if $isMicorsoftIE
@@ -78,14 +75,25 @@ $isMicorsoftIE: false !default
 @mixin blur($lengh)
 	+prefixer(filter, blur($lengh))
 @mixin border-radius($value)
+	// For the android low version maybe android < 2.3.3
+	@if $value == 100%
+		$value: 999em
 	+prefixer(border-radius, $value)
 @mixin border-bottom-left-radius($value)
+	@if $value == 100%
+		$value: 999em
 	+prefixer(border-bottom-left-radius, $value)
 @mixin border-bottom-right-radius($value)
+	@if $value == 100%
+		$value: 999em
 	+prefixer(border-bottom-right-radius, $value)
 @mixin border-top-left-radius($value)
+	@if $value == 100%
+		$value: 999em
 	+prefixer(border-top-left-radius, $value)
 @mixin border-top-right-radius($value)
+	@if $value == 100%
+		$value: 999em
 	+prefixer(border-top-right-radius, $value)
 // @mixin border-image
 @mixin box-sizing($value)
@@ -246,15 +254,23 @@ $isMicorsoftIE: false !default
 	+prefixer(user-select, $value)
 
 // For animate elements step by step
-@mixin playByStep($elem, $frameName, $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease)
+@mixin animateByFrame($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
 	$start: $start
 	@for $i from $start through $end
-		#{$elem}:nth-child(#{$i})
-			@if $start < $end
-				+animation($frameName $duration ($i * $delayInterval + $delay)+s $timmingFuc)
-			@else
-				+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
-			+animation-fill-mode(forwards)
+		#{$loopElement}:nth-child(#{$i})
+			@if $applyElement
+				#{$applyElement}
+					@if $start < $end
+						+animation($frameName $duration ($i * $delayInterval + $delay)+s $timmingFuc)
+					@else
+						+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
+					+animation-fill-mode(both)
+			@if not($applyElement)
+				@if $start < $end
+					+animation($frameName $duration ($i * $delayInterval + $delay)+s $timmingFuc)
+				@else
+					+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
+				+animation-fill-mode(both)
 
 @mixin createSlideFrame($name, $from, $value)
 	+keyframes(#{$name})
@@ -265,9 +281,9 @@ $isMicorsoftIE: false !default
 				+translateY($value)
 		100%
 			@if ($from == left) or ($from == right)
-				+translateX(0)
+				+translateX(0%)
 			@else
-				+translateY(0)
+				+translateY(0%)
 
 @mixin createOpacityFrame($name:opacityFrame)
 	+keyframes(#{$name})

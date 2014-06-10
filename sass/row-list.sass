@@ -1,0 +1,52 @@
+$use-fadeInLeft 		:	true
+$use-fadeInRight 		:	true
+@import '_normalize.scss','_animate.scss','_sasshat.sass'
+
+
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+@mixin clearfix()
+	&:before,&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+.clearfix
+	+clearfix()
+.panel
+	padding: 10px
+.row-list
+	position: relative
+	li
+		+display(flex)
+		padding-bottom: 10px
+	.type
+		width: 80px
+		height: 80px
+		text-align: center
+		line-height: 108px
+		&.clicked
+			background: #ff7f11
+		&.flower
+			background: #1daffc
+		&.s-novel
+			background: #5db582
+		&.l-novel
+			background: #e74b4e
+	+animateByFrame(li,fadeInLeft, 1, 4, .5s, 0, .1, ease, '.type')
+	.ico
+		display: inline-block
+		width: 40px
+		height: 40px
+		border: 2px solid white
+		+border-radius(100%)
+	h2
+		padding: 8px 0
+	.desc
+		color: gray
+	.info
+		+flex(1)
+		padding-left: 10px
+	+animateByFrame(li,fadeInRight, 1, 4, .5s, 0, .1, ease, '.info')
