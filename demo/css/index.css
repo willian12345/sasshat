@@ -135,7 +135,7 @@ table {
 ul {
   list-style: none; }
 
-h1, h2, h3, h4, ul {
+h1, h2, h3, h4, ul, body, dl, dd, p {
   margin: 0;
   padding: 0; }
 

@@ -35,7 +35,6 @@ $use-fadeInRight 		:	true
 			background: #5db582
 		&.l-novel
 			background: #e74b4e
-	+animateByFrame(li,fadeInLeft, 1, 4, .5s, 0, .1, ease, '.type')
 	.ico
 		display: inline-block
 		width: 40px
@@ -49,4 +48,6 @@ $use-fadeInRight 		:	true
 	.info
 		+flex(1)
 		padding-left: 10px
+	
+	+animateByFrame($loopElement:li,$frameName:fadeInLeft, $start:1, $end:4, $applyElement:'.type')
 	+animateByFrame(li,fadeInRight, 1, 4, .5s, 0, .1, ease, '.info')

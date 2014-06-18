@@ -1,0 +1,50 @@
+@charset "utf-8"
+
+$use-flipInX: true
+$use-flipInY: true
+@import '_normalize.scss','_animate.scss','_sasshat.sass'
+
+
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+@mixin clearfix()
+	&:before,&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+html
+	width: 100%
+	height: 100%
+body
+	width: 100%
+	height: 100%
+	background: #000 url(../imgs/wave.png) no-repeat
+	background-size: 100% 100%
+.panel
+	padding: 10px
+.row-list
+	+clearfix()
+	margin-top: 40px
+	.info
+		text-align: center
+		font-size: 14px
+		font-weight: bold
+		color: #fff
+	li
+		float: left
+		width: 25%
+		height: 80px
+		line-height: 80px
+		background: rgba(#00AC90, .8)
+	// ***第1组从左向右延X轴翻转***
+	+animateByFrame(li,flipInX, 1, 8, .5s, 0, .1, ease)
+
+.row-list.flipY
+	li
+		height: 100px
+		line-height: 100px
+	// ***第1组从右向左延Y轴翻转***
+	+animateByFrame(li,flipInY, 8, 1, .5s, 1, .1, ease)
