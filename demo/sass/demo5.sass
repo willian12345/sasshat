@@ -1,6 +1,4 @@
-$use-rotateIn 		:	true
-$use-fadeInLeft 		:	true
-$use-fadeInRight 		:	true
+$use-bounceInLeft 		:	true
 @import '_normalize.scss','_animate.scss','_sasshat.sass'
 
 
@@ -29,12 +27,11 @@ body
 .row-list
 	position: relative
 	li
-		float: left
-		width: 50%
+
 		padding-bottom: 10px
 	.type
 		text-align: center
-		line-height: 40px
+		line-height: 20px
 		&.clicked
 			background: rgba(#ff7f11,.8)
 		&.flower
@@ -45,15 +42,13 @@ body
 			background: rgba(#e74b4e,.8)
 	.ico
 		display: inline-block
-		width: 80px
-		height: 80px
-		margin-top: 40px
+		width: 50px
+		height: 50px
+		margin-top: 20px
 		border: 2px solid white
 		+border-radius(100%)
 	h2
 		padding: 8px 0
 		color: #fff
 
-	+animateByFrame(li,rotateIn, 1, 4, .5s)
-	+animateByFrame(li,fadeInLeft, 1, 4, .5s, 1, .1, ease,'.ico')
-	+animateByFrame(li,fadeInRight, 1, 4, .5s, 1, .1, ease, 'h2')
+	+animateByFrame(li,bounceInLeft, 1, 4, .5s)
