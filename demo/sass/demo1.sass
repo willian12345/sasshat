@@ -1,0 +1,54 @@
+$use-rollIn 		:	true
+@import '_normalize.scss','_animate.scss','_sasshat.sass'
+
+
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+@mixin clearfix()
+	&:before,&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+html
+	width: 100%
+	height: 100%
+body
+	width: 100%
+	height: 100%
+	background: #000 url(../imgs/wave.png) no-repeat
+	background-size: 100% 100%
+.clearfix
+	+clearfix()
+.panel
+	padding: 10px
+.row-list
+	position: relative
+	li
+		float: left
+		width: 50%
+		padding-bottom: 10px
+	.type
+		text-align: center
+		line-height: 40px
+		&.clicked
+			background: rgba(#ff7f11,.8)
+		&.flower
+			background: rgba(#1daffc,.8)
+		&.s-novel
+			background: rgba(#5db582,.8)
+		&.l-novel
+			background: rgba(#e74b4e,.8)
+	.ico
+		display: inline-block
+		width: 80px
+		height: 80px
+		margin-top: 40px
+		border: 2px solid white
+		+border-radius(100%)
+	h2
+		padding: 8px 0
+		color: #fff
+	+animateByFrame(li,rollIn, 1, 4, .5s, 0, .1, ease)
