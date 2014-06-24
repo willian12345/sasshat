@@ -256,8 +256,10 @@ $isMicorsoftIE: false !default
 
 // For animate elements step by step
 @mixin animateByFrame($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
+	$startIndex: $start
 	$start: $start
-	@for $i from $start through $end
+	
+	@for $i from $startIndex through $end
 		#{$loopElement}:nth-child(#{$i})
 			@if $applyElement
 				#{$applyElement}
