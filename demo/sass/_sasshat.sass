@@ -257,20 +257,22 @@
 // For animate elements step by step
 @mixin animateByFrame($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
 	$startIndex: $start
-	$start: $start
-	
+	$delay:strip-units($delay)
+	$delayInterval:strip-units($delayInterval)
+	$j:0
 	@for $i from $startIndex through $end
+		$j: $j+1
 		#{$loopElement}:nth-child(#{$i})
 			@if $applyElement
 				#{$applyElement}
 					@if $start < $end
-						+animation($frameName $duration ($i * $delayInterval + $delay)+s $timmingFuc)
+						+animation($frameName $duration ($j * $delayInterval + $delay)+s $timmingFuc)
 					@else
 						+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
 					+animation-fill-mode(both)
 			@if not($applyElement)
 				@if $start < $end
-					+animation($frameName $duration ($i * $delayInterval + $delay)+s $timmingFuc)
+					+animation($frameName $duration ($j * $delayInterval + $delay)+s $timmingFuc)
 				@else
 					+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
 				+animation-fill-mode(both)
