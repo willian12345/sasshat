@@ -290,7 +290,7 @@ body {
  * Date: 2014-06-06
  * Vertion: Beta
  * Github: https://github.com/willian12345/sasshat
- * Sass-vertion: Sass@3.7.7
+ * Sass-version: Sass@3.7.7
  */
 *,
 *:before,
@@ -394,7 +394,7 @@ body {
     -moz-animation: fadeInLeft 0.5s 1.4s ease;
     -ms-animation: fadeInLeft 0.5s 1.4s ease;
     animation: fadeInLeft 0.5s 1.4s ease; }
-  .row-list .ico .ico {
+  .row-list .ico {
     -webkit-animation-fill-mode: both !important;
     -moz-animation-fill-mode: both !important;
     -ms-animation-fill-mode: both !important;
@@ -419,7 +419,7 @@ body {
     -moz-animation: fadeInRight 0.5s 1.4s ease;
     -ms-animation: fadeInRight 0.5s 1.4s ease;
     animation: fadeInRight 0.5s 1.4s ease; }
-  .row-list h2 h2 {
+  .row-list h2 {
     -webkit-animation-fill-mode: both !important;
     -moz-animation-fill-mode: both !important;
     -ms-animation-fill-mode: both !important;

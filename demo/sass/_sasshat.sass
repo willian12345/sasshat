@@ -277,8 +277,7 @@
 					+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
 	@if $applyElement
 		#{$applyElement}
-			#{$applyElement}
-				+animation-fill-mode(both!important)
+			+animation-fill-mode(both!important)
 	@if not($applyElement)
 		#{$loopElement}
 			+animation-fill-mode(both!important)
