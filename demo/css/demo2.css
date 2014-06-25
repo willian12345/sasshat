@@ -211,88 +211,6 @@ html, body {
   -moz-animation-name: bounceInDown;
   animation-name: bounceInDown; }
 
-@-webkit-keyframes rotateInUpRight {
-  0% {
-    -webkit-transform-origin: right bottom;
-    -webkit-transform: rotate(-90deg);
-    opacity: 0; }
-
-  100% {
-    -webkit-transform-origin: right bottom;
-    -webkit-transform: rotate(0);
-    opacity: 1; } }
-@-moz-keyframes rotateInUpRight {
-  0% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(-90deg);
-    opacity: 0; }
-
-  100% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(0);
-    opacity: 1; } }
-@-o-keyframes rotateInUpRight {
-  0% {
-    -o-transform-origin: right bottom;
-    -o-transform: rotate(-90deg);
-    opacity: 0; }
-
-  100% {
-    -o-transform-origin: right bottom;
-    -o-transform: rotate(0);
-    opacity: 1; } }
-@keyframes rotateInUpRight {
-  0% {
-    transform-origin: right bottom;
-    transform: rotate(-90deg);
-    opacity: 0; }
-
-  100% {
-    transform-origin: right bottom;
-    transform: rotate(0);
-    opacity: 1; } }
-.rotateInUpRight {
-  -webkit-animation-name: rotateInUpRight;
-  -moz-animation-name: rotateInUpRight;
-  animation-name: rotateInUpRight; }
-
-@-webkit-keyframes rollIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100%) rotate(-120deg); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px) rotate(0deg); } }
-@-moz-keyframes rollIn {
-  0% {
-    opacity: 0;
-    -moz-transform: translateX(-100%) rotate(-120deg); }
-
-  100% {
-    opacity: 1;
-    -moz-transform: translateX(0px) rotate(0deg); } }
-@-o-keyframes rollIn {
-  0% {
-    opacity: 0;
-    -o-transform: translateX(-100%) rotate(-120deg); }
-
-  100% {
-    opacity: 1;
-    -o-transform: translateX(0px) rotate(0deg); } }
-@keyframes rollIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%) rotate(-120deg); }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px) rotate(0deg); } }
-.rollIn {
-  -webkit-animation-name: rollIn;
-  -moz-animation-name: rollIn;
-  animation-name: rollIn; }
-
 body {
   -webkit-backface-visibility: hidden; }
 
@@ -374,37 +292,37 @@ body {
     padding: 8px 0;
     color: white; }
   .row-list li:nth-child(1) {
-    -webkit-animation: rollIn 0.5s 0.1s ease;
-    -moz-animation: rollIn 0.5s 0.1s ease;
-    -ms-animation: rollIn 0.5s 0.1s ease;
-    animation: rollIn 0.5s 0.1s ease;
+    -webkit-animation: bounceInDown 0.5s 0.1s ease;
+    -moz-animation: bounceInDown 0.5s 0.1s ease;
+    -ms-animation: bounceInDown 0.5s 0.1s ease;
+    animation: bounceInDown 0.5s 0.1s ease;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     animation-fill-mode: both; }
   .row-list li:nth-child(2) {
-    -webkit-animation: rollIn 0.5s 0.2s ease;
-    -moz-animation: rollIn 0.5s 0.2s ease;
-    -ms-animation: rollIn 0.5s 0.2s ease;
-    animation: rollIn 0.5s 0.2s ease;
+    -webkit-animation: bounceInDown 0.5s 0.2s ease;
+    -moz-animation: bounceInDown 0.5s 0.2s ease;
+    -ms-animation: bounceInDown 0.5s 0.2s ease;
+    animation: bounceInDown 0.5s 0.2s ease;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     animation-fill-mode: both; }
   .row-list li:nth-child(3) {
-    -webkit-animation: rollIn 0.5s 0.3s ease;
-    -moz-animation: rollIn 0.5s 0.3s ease;
-    -ms-animation: rollIn 0.5s 0.3s ease;
-    animation: rollIn 0.5s 0.3s ease;
+    -webkit-animation: bounceInDown 0.5s 0.3s ease;
+    -moz-animation: bounceInDown 0.5s 0.3s ease;
+    -ms-animation: bounceInDown 0.5s 0.3s ease;
+    animation: bounceInDown 0.5s 0.3s ease;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     animation-fill-mode: both; }
   .row-list li:nth-child(4) {
-    -webkit-animation: rollIn 0.5s 0.4s ease;
-    -moz-animation: rollIn 0.5s 0.4s ease;
-    -ms-animation: rollIn 0.5s 0.4s ease;
-    animation: rollIn 0.5s 0.4s ease;
+    -webkit-animation: bounceInDown 0.5s 0.4s ease;
+    -moz-animation: bounceInDown 0.5s 0.4s ease;
+    -ms-animation: bounceInDown 0.5s 0.4s ease;
+    animation: bounceInDown 0.5s 0.4s ease;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;

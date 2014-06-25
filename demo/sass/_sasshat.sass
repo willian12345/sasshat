@@ -8,9 +8,10 @@
  * Github: https://github.com/willian12345/sasshat
  * Sass-vertion: Sass@3.7.7
  */
-$isMicorsoftIE: false !default
 @function pxToEm($px, $base: 16)
 	@return ($px / $base) * 1em
+@function strip-units($number)
+	@return $number / ($number * 0 + 1)
 
 @mixin prefixer($property, $value, $valPrefix: false)
 	-webkit-#{$property}: if($valPrefix, -webkit-#{$value}, $value)
@@ -58,7 +59,6 @@ $isMicorsoftIE: false !default
 // B
 @mixin box-shadow($shadow...)
 	+prefixer(box-shadow, $shadow)
-	@if $isMicorsoftIE
 // generate gradient code by software is better like: 
 // mozilla's http://www.colorzilla.com/gradient-editor
 /// @mixin background-image
@@ -204,7 +204,7 @@ $isMicorsoftIE: false !default
 	+prefixer(transform, scaleY(#{$value}))
 @mixin scaleX($value)
 	+prefixer(transform, scaleX(#{$value}))
-@mixin scale3d($value)
+@mixin scale3d($value...)
 	+prefixer(transform, scale3d(#{$value}))
 
 @mixin rotate($value...)
@@ -274,23 +274,3 @@ $isMicorsoftIE: false !default
 				@else
 					+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
 				+animation-fill-mode(both)
-
-@mixin createSlideFrame($name, $from, $value)
-	+keyframes(#{$name})
-		0%
-			@if ($from == left) or ($from == right)
-				+translateX($value)
-			@else
-				+translateY($value)
-		100%
-			@if ($from == left) or ($from == right)
-				+translateX(0%)
-			@else
-				+translateY(0%)
-
-@mixin createOpacityFrame($name:opacityFrame)
-	+keyframes(#{$name})
-		0%
-			opacity: 0
-		100%
-			opacity: 1

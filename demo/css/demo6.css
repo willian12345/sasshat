@@ -335,11 +335,10 @@ body {
 
 .row-list {
   position: relative; }
-  .row-list li {
-    padding-bottom: 10px; }
   .row-list .type {
     text-align: center;
-    line-height: 20px; }
+    line-height: 20px;
+    padding: 8px; }
     .row-list .type.clicked {
       background: rgba(255, 127, 17, 0.8); }
     .row-list .type.flower {

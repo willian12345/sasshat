@@ -1,4 +1,3 @@
-$use-bounceInDown 		:	true
 @import '_normalize.scss','_animate.scss','_sasshat.sass'
 
 
@@ -12,6 +11,17 @@ $use-bounceInDown 		:	true
 		display: table
 	&:after
 		clear: both
+
++keyframes(scaleIn)
+	0%
+		+scale3d(10,10,0)
+		opacity: 0
+	100%
+		+scale3d(1,1,0)
+		opacity: 1
+
+
+
 html
 	width: 100%
 	height: 100%
@@ -28,11 +38,13 @@ body
 	position: relative
 	li
 		float: left
-		width: 50%
+		width: 25%
 		padding-bottom: 10px
+		+transform-origin(50% 0)
 	.type
+		height: 80px
+		line-height: 80px
 		text-align: center
-		line-height: 40px
 		&.clicked
 			background: rgba(#ff7f11,.8)
 		&.flower
@@ -41,14 +53,9 @@ body
 			background: rgba(#5db582,.8)
 		&.l-novel
 			background: rgba(#e74b4e,.8)
-	.ico
-		display: inline-block
-		width: 80px
-		height: 80px
-		margin-top: 40px
-		border: 2px solid white
-		+border-radius(100%)
 	h2
 		padding: 8px 0
 		color: #fff
-	+animateByFrame(li,bounceInDown, 1, 4, .5s, 0, .1, ease)
+	+animateByFrame(li,scaleIn, 1, 4, .5s)
+	+animateByFrame(li,scaleIn, 8, 4, .5s)
+	+animateByFrame(li,scaleIn, 9, 16, .5s)
