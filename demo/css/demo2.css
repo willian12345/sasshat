@@ -295,35 +295,24 @@ body {
     -webkit-animation: bounceInDown 0.5s 0.1s ease;
     -moz-animation: bounceInDown 0.5s 0.1s ease;
     -ms-animation: bounceInDown 0.5s 0.1s ease;
-    animation: bounceInDown 0.5s 0.1s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: bounceInDown 0.5s 0.1s ease; }
   .row-list li:nth-child(2) {
     -webkit-animation: bounceInDown 0.5s 0.2s ease;
     -moz-animation: bounceInDown 0.5s 0.2s ease;
     -ms-animation: bounceInDown 0.5s 0.2s ease;
-    animation: bounceInDown 0.5s 0.2s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: bounceInDown 0.5s 0.2s ease; }
   .row-list li:nth-child(3) {
     -webkit-animation: bounceInDown 0.5s 0.3s ease;
     -moz-animation: bounceInDown 0.5s 0.3s ease;
     -ms-animation: bounceInDown 0.5s 0.3s ease;
-    animation: bounceInDown 0.5s 0.3s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: bounceInDown 0.5s 0.3s ease; }
   .row-list li:nth-child(4) {
     -webkit-animation: bounceInDown 0.5s 0.4s ease;
     -moz-animation: bounceInDown 0.5s 0.4s ease;
     -ms-animation: bounceInDown 0.5s 0.4s ease;
-    animation: bounceInDown 0.5s 0.4s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: bounceInDown 0.5s 0.4s ease; }
+  .row-list li {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }

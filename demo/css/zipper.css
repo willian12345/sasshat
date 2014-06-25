@@ -320,71 +320,49 @@ body {
     -webkit-animation: fadeInLeft 0.5s 0.1s ease;
     -moz-animation: fadeInLeft 0.5s 0.1s ease;
     -ms-animation: fadeInLeft 0.5s 0.1s ease;
-    animation: fadeInLeft 0.5s 0.1s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInLeft 0.5s 0.1s ease; }
   .row-list li:nth-child(2) .type {
     -webkit-animation: fadeInLeft 0.5s 0.2s ease;
     -moz-animation: fadeInLeft 0.5s 0.2s ease;
     -ms-animation: fadeInLeft 0.5s 0.2s ease;
-    animation: fadeInLeft 0.5s 0.2s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInLeft 0.5s 0.2s ease; }
   .row-list li:nth-child(3) .type {
     -webkit-animation: fadeInLeft 0.5s 0.3s ease;
     -moz-animation: fadeInLeft 0.5s 0.3s ease;
     -ms-animation: fadeInLeft 0.5s 0.3s ease;
-    animation: fadeInLeft 0.5s 0.3s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInLeft 0.5s 0.3s ease; }
   .row-list li:nth-child(4) .type {
     -webkit-animation: fadeInLeft 0.5s 0.4s ease;
     -moz-animation: fadeInLeft 0.5s 0.4s ease;
     -ms-animation: fadeInLeft 0.5s 0.4s ease;
-    animation: fadeInLeft 0.5s 0.4s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInLeft 0.5s 0.4s ease; }
+  .row-list .type .type {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }
   .row-list li:nth-child(1) .info {
     -webkit-animation: fadeInRight 0.5s 0.1s ease;
     -moz-animation: fadeInRight 0.5s 0.1s ease;
     -ms-animation: fadeInRight 0.5s 0.1s ease;
-    animation: fadeInRight 0.5s 0.1s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInRight 0.5s 0.1s ease; }
   .row-list li:nth-child(2) .info {
     -webkit-animation: fadeInRight 0.5s 0.2s ease;
     -moz-animation: fadeInRight 0.5s 0.2s ease;
     -ms-animation: fadeInRight 0.5s 0.2s ease;
-    animation: fadeInRight 0.5s 0.2s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInRight 0.5s 0.2s ease; }
   .row-list li:nth-child(3) .info {
     -webkit-animation: fadeInRight 0.5s 0.3s ease;
     -moz-animation: fadeInRight 0.5s 0.3s ease;
     -ms-animation: fadeInRight 0.5s 0.3s ease;
-    animation: fadeInRight 0.5s 0.3s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInRight 0.5s 0.3s ease; }
   .row-list li:nth-child(4) .info {
     -webkit-animation: fadeInRight 0.5s 0.4s ease;
     -moz-animation: fadeInRight 0.5s 0.4s ease;
     -ms-animation: fadeInRight 0.5s 0.4s ease;
-    animation: fadeInRight 0.5s 0.4s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInRight 0.5s 0.4s ease; }
+  .row-list .info .info {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }

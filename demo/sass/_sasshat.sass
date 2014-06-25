@@ -269,10 +269,16 @@
 						+animation($frameName $duration ($j * $delayInterval + $delay)+s $timmingFuc)
 					@else
 						+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
-					+animation-fill-mode(both)
+					
 			@if not($applyElement)
 				@if $start < $end
 					+animation($frameName $duration ($j * $delayInterval + $delay)+s $timmingFuc)
 				@else
 					+animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
-				+animation-fill-mode(both)
+	@if $applyElement
+		#{$applyElement}
+			#{$applyElement}
+				+animation-fill-mode(both!important)
+	@if not($applyElement)
+		#{$loopElement}
+			+animation-fill-mode(both!important)

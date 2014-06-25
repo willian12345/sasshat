@@ -434,107 +434,74 @@ body {
     -webkit-animation: flip 0.5s 0.1s ease;
     -moz-animation: flip 0.5s 0.1s ease;
     -ms-animation: flip 0.5s 0.1s ease;
-    animation: flip 0.5s 0.1s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: flip 0.5s 0.1s ease; }
   .row-list li:nth-child(2) {
     -webkit-animation: flip 0.5s 0.2s ease;
     -moz-animation: flip 0.5s 0.2s ease;
     -ms-animation: flip 0.5s 0.2s ease;
-    animation: flip 0.5s 0.2s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: flip 0.5s 0.2s ease; }
   .row-list li:nth-child(3) {
     -webkit-animation: flip 0.5s 0.3s ease;
     -moz-animation: flip 0.5s 0.3s ease;
     -ms-animation: flip 0.5s 0.3s ease;
-    animation: flip 0.5s 0.3s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: flip 0.5s 0.3s ease; }
   .row-list li:nth-child(4) {
     -webkit-animation: flip 0.5s 0.4s ease;
     -moz-animation: flip 0.5s 0.4s ease;
     -ms-animation: flip 0.5s 0.4s ease;
-    animation: flip 0.5s 0.4s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: flip 0.5s 0.4s ease; }
+  .row-list li {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }
   .row-list li:nth-child(1) .ico {
     -webkit-animation: fadeInDown 0.5s 1.1s ease;
     -moz-animation: fadeInDown 0.5s 1.1s ease;
     -ms-animation: fadeInDown 0.5s 1.1s ease;
-    animation: fadeInDown 0.5s 1.1s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInDown 0.5s 1.1s ease; }
   .row-list li:nth-child(2) .ico {
     -webkit-animation: fadeInDown 0.5s 1.2s ease;
     -moz-animation: fadeInDown 0.5s 1.2s ease;
     -ms-animation: fadeInDown 0.5s 1.2s ease;
-    animation: fadeInDown 0.5s 1.2s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInDown 0.5s 1.2s ease; }
   .row-list li:nth-child(3) .ico {
     -webkit-animation: fadeInDown 0.5s 1.3s ease;
     -moz-animation: fadeInDown 0.5s 1.3s ease;
     -ms-animation: fadeInDown 0.5s 1.3s ease;
-    animation: fadeInDown 0.5s 1.3s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInDown 0.5s 1.3s ease; }
   .row-list li:nth-child(4) .ico {
     -webkit-animation: fadeInDown 0.5s 1.4s ease;
     -moz-animation: fadeInDown 0.5s 1.4s ease;
     -ms-animation: fadeInDown 0.5s 1.4s ease;
-    animation: fadeInDown 0.5s 1.4s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInDown 0.5s 1.4s ease; }
+  .row-list .ico .ico {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }
   .row-list li:nth-child(1) h2 {
     -webkit-animation: fadeInUpBig 0.5s 1.1s ease;
     -moz-animation: fadeInUpBig 0.5s 1.1s ease;
     -ms-animation: fadeInUpBig 0.5s 1.1s ease;
-    animation: fadeInUpBig 0.5s 1.1s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInUpBig 0.5s 1.1s ease; }
   .row-list li:nth-child(2) h2 {
     -webkit-animation: fadeInUpBig 0.5s 1.2s ease;
     -moz-animation: fadeInUpBig 0.5s 1.2s ease;
     -ms-animation: fadeInUpBig 0.5s 1.2s ease;
-    animation: fadeInUpBig 0.5s 1.2s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInUpBig 0.5s 1.2s ease; }
   .row-list li:nth-child(3) h2 {
     -webkit-animation: fadeInUpBig 0.5s 1.3s ease;
     -moz-animation: fadeInUpBig 0.5s 1.3s ease;
     -ms-animation: fadeInUpBig 0.5s 1.3s ease;
-    animation: fadeInUpBig 0.5s 1.3s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInUpBig 0.5s 1.3s ease; }
   .row-list li:nth-child(4) h2 {
     -webkit-animation: fadeInUpBig 0.5s 1.4s ease;
     -moz-animation: fadeInUpBig 0.5s 1.4s ease;
     -ms-animation: fadeInUpBig 0.5s 1.4s ease;
-    animation: fadeInUpBig 0.5s 1.4s ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation: fadeInUpBig 0.5s 1.4s ease; }
+  .row-list h2 h2 {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }
