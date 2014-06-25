@@ -282,7 +282,7 @@ body {
  * Date: 2014-06-06
  * Vertion: Beta
  * Github: https://github.com/willian12345/sasshat
- * Sass-vertion: Sass@3.7.7
+ * Sass-version: Sass@3.7.7
  */
 *,
 *:before,
@@ -374,21 +374,6 @@ body {
     -moz-animation: fadeInUp 0.5s 1.1s ease;
     -ms-animation: fadeInUp 0.5s 1.1s ease;
     animation: fadeInUp 0.5s 1.1s ease; }
-  .row-list li:nth-child(6) {
-    -webkit-animation: fadeInUp 0.5s 1.2s ease;
-    -moz-animation: fadeInUp 0.5s 1.2s ease;
-    -ms-animation: fadeInUp 0.5s 1.2s ease;
-    animation: fadeInUp 0.5s 1.2s ease; }
-  .row-list li:nth-child(7) {
-    -webkit-animation: fadeInUp 0.5s 1.3s ease;
-    -moz-animation: fadeInUp 0.5s 1.3s ease;
-    -ms-animation: fadeInUp 0.5s 1.3s ease;
-    animation: fadeInUp 0.5s 1.3s ease; }
-  .row-list li:nth-child(8) {
-    -webkit-animation: fadeInUp 0.5s 1.4s ease;
-    -moz-animation: fadeInUp 0.5s 1.4s ease;
-    -ms-animation: fadeInUp 0.5s 1.4s ease;
-    animation: fadeInUp 0.5s 1.4s ease; }
   .row-list li {
     -webkit-animation-fill-mode: both !important;
     -moz-animation-fill-mode: both !important;
