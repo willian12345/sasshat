@@ -299,7 +299,7 @@ body {
  * Date: 2014-06-06
  * Vertion: Beta
  * Github: https://github.com/willian12345/sasshat
- * Sass-vertion: Sass@3.7.7
+ * Sass-version: Sass@3.7.7
  */
 *,
 *:before,
@@ -316,7 +316,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: black url(../imgs/wave.png) no-repeat;
+  background: black url(../imgs/bg1.png) no-repeat;
   background-size: 100% 100%; }
 
 .panel {

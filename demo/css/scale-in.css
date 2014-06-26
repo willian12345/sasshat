@@ -244,7 +244,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: black url(../imgs/wave.png) no-repeat;
+  background: black url(../imgs/bg2.png) no-repeat;
   background-size: 100% 100%;
   overflow: hidden; }
 
@@ -272,13 +272,13 @@ body {
     line-height: 80px;
     text-align: center; }
     .row-list .type.clicked {
-      background: rgba(255, 127, 17, 0.8); }
+      background: rgba(255, 127, 17, 0.7); }
     .row-list .type.flower {
-      background: rgba(29, 175, 252, 0.8); }
+      background: rgba(29, 175, 252, 0.7); }
     .row-list .type.s-novel {
-      background: rgba(93, 181, 130, 0.8); }
+      background: rgba(93, 181, 130, 0.7); }
     .row-list .type.l-novel {
-      background: rgba(231, 75, 78, 0.8); }
+      background: rgba(231, 75, 78, 0.7); }
   .row-list h2 {
     padding: 8px 0;
     color: white; }

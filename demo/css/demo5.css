@@ -232,7 +232,7 @@ body {
  * Date: 2014-06-06
  * Vertion: Beta
  * Github: https://github.com/willian12345/sasshat
- * Sass-vertion: Sass@3.7.7
+ * Sass-version: Sass@3.7.7
  */
 *,
 *:before,
@@ -249,7 +249,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: black url(../imgs/wave.png) no-repeat;
+  background: black url(../imgs/bg1.png) no-repeat;
   background-size: 100% 100%; }
 
 .clearfix:before, .clearfix:after {
@@ -269,13 +269,13 @@ body {
     text-align: center;
     line-height: 20px; }
     .row-list .type.clicked {
-      background: rgba(255, 127, 17, 0.8); }
+      background: rgba(255, 127, 17, 0.9); }
     .row-list .type.flower {
-      background: rgba(29, 175, 252, 0.8); }
+      background: rgba(29, 175, 252, 0.9); }
     .row-list .type.s-novel {
-      background: rgba(93, 181, 130, 0.8); }
+      background: rgba(93, 181, 130, 0.9); }
     .row-list .type.l-novel {
-      background: rgba(231, 75, 78, 0.8); }
+      background: rgba(231, 75, 78, 0.9); }
   .row-list .ico {
     display: inline-block;
     width: 50px;
