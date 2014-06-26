@@ -14,7 +14,7 @@ The sasshat is SASS library. So, It's just for SASS.If you are using LESS you sh
 ##Features 
 
 - Easy to coding css3
-- Make the animate.css awesome!
+- Make the animation awesome!
 
 
 
@@ -54,7 +54,7 @@ div{
 ##特点  
 
 - 书写css3更方便
-- 让animate.css动画更酷
+- 让animation动画更酷
 
 ##让CSS3动画在移动设备上更风骚
 CSS3动画可以做出很酷炫的效果,关于CSS3动画，比较出名的应该是**[animate.css](http://daneden.github.io/animate.css)** 
