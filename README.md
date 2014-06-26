@@ -51,6 +51,13 @@ div{
 }
 ````
 
+##Get Started
+1、新建一个以.sass或.scss结尾的文件如： demo.sass或demo.scss
+
+2、在文件中引入如：`@import '_sasshat.sass'`
+
+3、现在可以开始写你自己的sass了
+
 ##特点  
 
 - 书写css3更方便
