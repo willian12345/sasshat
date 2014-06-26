@@ -89,19 +89,19 @@ animate虽然酷，但实际在项目中应用CSS3动画时候需要与鼠标光
 
   100% {
     opacity: 1; } }
-@-moz-keyframes scaleIn {
+@-moz-keyframes fadeIn {
   0% {
     opacity: 0; }
 
   100% {
     opacity: 1; } }
-@-ms-keyframes scaleIn {
+@-ms-keyframes fadeIn {
   0% {
     opacity: 0; }
 
   100% {
     opacity: 1; } }
-@keyframes scaleIn {
+@keyframes fadeIn {
   0% {
     opacity: 0; }
 
