@@ -150,21 +150,6 @@ html, body {
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
 
-body {
-  -webkit-backface-visibility: hidden; }
-
-.animated {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-  .animated.hinge {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    animation-duration: 2s; }
-
 /* Sasshat Sass Library
  * Author: wang.2gou
  * Email: willian12345@126.com
