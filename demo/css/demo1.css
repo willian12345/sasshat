@@ -242,7 +242,11 @@ body {
   .row-list li {
     float: left;
     width: 50%;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    -webkit-box-shadow: 1px 1px 2px black;
+    -moz-box-shadow: 1px 1px 2px black;
+    -ms-box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px black; }
   .row-list .type {
     text-align: center;
     line-height: 40px; }
