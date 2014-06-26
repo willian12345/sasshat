@@ -13,9 +13,8 @@ The sasshat is SASS library. So, It's just for SASS.If you are using LESS you sh
 
 ##Features 
 
-- Auto complete css3 prefix 
-- Just for HTML5
-- Frame animate
+- Easy to coding css3
+- Make the animate.css awesome!
 
 
 
@@ -57,7 +56,7 @@ div{
 - 书写css3更方便
 - 让animate.css动画更酷
 
-##让CSS3动画在移动设备上放出光彩
+##让CSS3动画在移动设备上更风骚
 CSS3动画可以做出很酷炫的效果,关于CSS3动画，比较出名的应该是**[animate.css](http://daneden.github.io/animate.css)** 
 
 为了适应SASS语法，某位老兄已经将其转换为**[animate.sass](https://github.com/adamstac/animate.sass)**了，我直接将其拿到sasshat的目录中了
@@ -69,7 +68,7 @@ animate虽然酷，但实际在项目中应用CSS3动画时候需要与鼠标光
 
 如何在移动设备上应用酷炫的CSS3动画，而让你的 webapp 看起来更酷？
 
-让一连串的HTML元素延时逐个动起来才显高大上。demo中演示的都是关于这样的动画并且可适应自适应场景
+当然是让一连串的HTML元素延时逐个动起来才显高大上。demo中演示的都是关于这样的动画并且可适应自适应场景
 
 ####要让元素逐个动起来使用SASS并应用sasshat库后的写法
 ````
