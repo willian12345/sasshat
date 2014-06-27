@@ -51,6 +51,10 @@ div{
 }
 ````
 
+##动画DEMO
+**[DEMOs](http://sugarcane-mall.com/sasshat/)** 
+
+
 ##Get Started
 1、新建一个以.sass或.scss结尾的文件如： demo.sass或demo.scss
 
@@ -64,8 +68,6 @@ div{
 - 让animation动画更酷
 
 ##让CSS3动画在移动设备上更风骚
-
-**[DEMOs](http://sugarcane-mall.com/sasshat/)** 
 
 CSS3动画可以做出很酷炫的效果,关于CSS3动画，比较出名的应该是**[animate.css](http://daneden.github.io/animate.css)** 
 
