@@ -237,6 +237,10 @@ body {
 .panel {
   padding: 10px; }
 
+h1 {
+  color: #cccccc;
+  text-align: center; }
+
 .row-list {
   position: relative; }
   .row-list li {

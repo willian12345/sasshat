@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="css/demo1.css">
     <title>rollIn</title>
 </head>
-<body>
+<body onClick="show()" onTouchEnd="show()">
 <section class="panel">
-    <ul class="row-list">
-        <li>
+    <h1>点一下屏目</h1>
+    <ul class="row-list" id="container"></ul>
+</section>
+<script type="text/html" id="tmpl">
+    <li>
             <figure class="type clicked">
                 <div class="ico"></div>
                 <h2>点击榜</h2>
@@ -35,7 +38,11 @@
                 <h2>长篇小说榜</h2>
             </figure>
         </li>
-    </ul>
-</section>
+</script>
+<script type="text/javascript">
+    var show = function () {
+        document.querySelector('#container').innerHTML = document.querySelector('#tmpl').innerHTML;
+    }
+</script>
 </body>
 </html>
