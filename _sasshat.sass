@@ -281,3 +281,5 @@
 	@if not($applyElement)
 		#{$loopElement}
 			+animation-fill-mode(both!important)
+@mixin dominoAnimation($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
+	+animateByFrame($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)

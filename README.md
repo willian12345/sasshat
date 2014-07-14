@@ -187,7 +187,7 @@ $use-fadeInUp: true
 3、调用多米诺动画函数
 
 ````
-+animateByFrame(".lomo",fadeInUp, 1, 6)
++dominoAnimation(".lomo",fadeInUp, 1, 6)
 ````
 #####Results
 
