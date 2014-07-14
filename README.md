@@ -1,28 +1,10 @@
 #sasshat
 
+*简单易用的SASS库*
 *The simple and easy sass library*
 
 ----
 
-The sasshat is SASS library. So, It's just for SASS.If you are using LESS you should use the lesshat it's powerful in LESS
-**[lesshat.com](http://lesshat.com)**
-
-
-
-
-
-##Features 
-
-- Easy to coding css3
-- Make the animation awesome!
-
-
-
-
-----
-*简单易用的SASS库*
-
-----
 这是个sass库，专为sass语言，如果你用的是LESS，请移步这个LESS高大上的库
 **[lesshat.com](http://lesshat.com)**
 
@@ -266,9 +248,14 @@ $use-fadeInUp: true
     -ms-animation-fill-mode: both !important;
     animation-fill-mode: both !important; }
 ````
+####CSS3动画的优点（具体需要看浏览器实现）
+1.不占用js主线程
 
+2.可利用硬件加速
 
-#### 重要的dominoAnimation函数
+3.浏览器可对动画做优化(元素不可见时不动画, 减少对FPS的影响)
+
+#### dominoAnimation函数
 #####写法可以有以下几种，根据实际HTML结构选择使用
 ````
 +dominoAnimation(li,scaleIn, 1, 4, .5s)
