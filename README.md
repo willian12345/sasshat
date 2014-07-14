@@ -51,8 +51,6 @@ div{
 }
 ````
 
-##动画DEMO
-**[DEMOs](http://sugarcane-mall.com/sasshat/)** 
 
 
 ##Get Started
