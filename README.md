@@ -65,24 +65,118 @@ div{
 ##特点  
 
 - 书写css3更方便
-- 让animation动画更酷
-
-##让CSS3动画在移动设备上更风骚
-
-CSS3动画可以做出很酷炫的效果,关于CSS3动画，比较出名的应该是**[animate.css](http://daneden.github.io/animate.css)** 
-
-为了适应SASS语法，某位老兄已经将其转换为**[animate.sass](https://github.com/adamstac/animate.sass)**了，我直接将其拿到sasshat的目录中了
+- 特别适合web app
+- “多米诺”动画让animation动画更酷
 
 
-animate虽然酷，但实际在项目中应用CSS3动画时候需要与鼠标光标配合使用，比较多的就是应用hover事件了
+##“多米诺”动画
+多米諾骨牌，即碰倒第一枚骨牌，其余的骨牌就会产生连锁反应，依次倒下。
+“多米诺”动画即引申自多米诺骨牌，即让一连串的HTML元素延时依次逐个完成相应的动画效果。
 
-#####在移动设备中没有鼠标....
+具体效果参见**[DEMOs](http://sugarcane-mall.com/sasshat/)** 
 
-如何在移动设备上应用酷炫的CSS3动画，而让你的 webapp 看起来更酷？
+sasshat多米诺动画具体的CSS3动画其实是集成自**[animate.css](http://daneden.github.io/animate.css)** 动画库。所以在编写多米諾动画时实现一些常见的效果已经不需要你去编写keyframes动画帧了，直接调用已经编写好的keyframes名称就可以.
 
-当然是让一连串的HTML元素延时逐个动起来才显高大上。demo中演示的都是关于这样的动画并且可适应自适应场景
+为了适应SASS语法，某位老兄已经将其转换为**[animate.sass](https://github.com/adamstac/animate.sass)**了，我直接将其copy到sasshat的目录中了
 
-####要让元素逐个动起来使用SASS并应用sasshat库后的写法
+可调用已有的keyframes名称
+#####Fade Enter
+
+- fadeIn 	
+- fadeInUp 	
+- fadeInUpBig 
+- fadeInDown 
+- fadeInDownBig 
+- fadeInLeft 
+- fadeInLeftBig 
+- fadeInRight 
+- fadeInRightBig
+
+
+#####Fade Exit
+
+- fadeOut			
+- fadeOutUp	
+- fadeOutUpBig  
+- fadeOutDown
+- fadeOutDownBig
+- fadeOutLeft
+- fadeOutLeftBig
+- fadeOutRight
+- fadeOutRightBi
+
+
+#####Bounce Enter
+
+- bounceIn	
+- bounceInUp			
+- bounceInDown 		
+- bounceInLeft 		
+- bounceInRight 		
+
+
+#####Bounce Exit
+
+- bounceOut	
+- bounceOutUp		
+- bounceOutDown 		
+- bounceOutLeft 		
+- bounceOutRight 	
+
+
+
+#####Rotate Enter
+
+- rotateIn 	
+- rotateInUpLeft 	
+- rotateInUpRight 	
+- rotateInDownLeft 	
+- rotateInDownRight 	
+
+
+#####Rotate Exit
+
+- rotateOut 	
+- rotateOutUpLeft 	
+- rotateOutUpRight 	
+- rotateOutDownLeft 	
+- rotateOutDownRight 
+
+
+#####Flippers
+
+- flip		
+- flipInX	
+- flipInY	
+- flipOutX	
+- flipOutY	
+
+
+#####Lightspeed
+
+- lightSpeedIn 
+- lightSpeedOut 	
+
+
+#####Attention Seekers
+
+- bounce		
+- flash		
+- pulse		
+- wiggle		
+- swing		
+- shake		
+- tada		
+- wobble		
+
+
+#####Special
+
+- hinge		
+- rollIn				
+- rollOut 	
+
+####编写“多米诺”动画的写法
 ````
 +keyframes(fadeIn)
 	0%
