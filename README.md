@@ -268,12 +268,12 @@ $use-fadeInUp: true
 ````
 
 
-#### 重要的animateByFrame函数
+#### 重要的dominoAnimation函数
 #####写法可以有以下几种，根据实际HTML结构选择使用
 ````
-+animateByFrame(li,scaleIn, 1, 4, .5s)
-+animateByFrame(li,scaleIn, 4, 1, .5s)
-+animateByFrame($loopElement:li,$frameName:fadeInLeft, $start:1, $end:4, $applyElement:'.type')
++dominoAnimation(li,scaleIn, 1, 4, .5s)
++dominoAnimation(li,scaleIn, 4, 1, .5s)
++dominoAnimation($loopElement:li,$frameName:fadeInLeft, $start:1, $end:4, $applyElement:'.type')
 
 ````
 
