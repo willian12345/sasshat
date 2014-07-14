@@ -175,68 +175,96 @@ sasshat多米诺动画具体的CSS3动画其实是集成自**[animate.css](http:
 - rollOut 	
 
 ####编写“多米诺”动画的写法
+
+1、先设置某个动画变量为true
+
+2、导入 _animate.scss 和 _sasshat.sass文件
+
 ````
-+keyframes(fadeIn)
-	0%
-		opacity: 0
-	100%
-		opacity: 1
-+animateByFrame(li,fadeIn, 1, 4, .5s)
+$use-fadeInUp: true
+@import '_animate.scss','_sasshat.sass'
+````
+3、调用多米诺动画函数
+
+````
++animateByFrame(".lomo",fadeInUp, 1, 6)
 ````
 #####Results
 
 ````
 // 编译后就会生成以下内容，形成元素逐个按延时长短形成动画
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeInUp {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: translateY(20px); }
 
   100% {
-    opacity: 1; } }
-@-moz-keyframes fadeIn {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+@-moz-keyframes fadeInUp {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -moz-transform: translateY(20px); }
 
   100% {
-    opacity: 1; } }
-@-ms-keyframes fadeIn {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+@-o-keyframes fadeInUp {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -o-transform: translateY(20px); }
 
   100% {
-    opacity: 1; } }
-@keyframes fadeIn {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+@keyframes fadeInUp {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateY(20px); }
 
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translateY(0); } }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
 
-
-li:nth-child(1) {
-    -webkit-animation: fadeIn 0.5s 0.1s ease;
-    -moz-animation: fadeIn 0.5s 0.1s ease;
-    -ms-animation: fadeIn 0.5s 0.1s ease;
-    animation: fadeIn 0.5s 0.1s ease; 
-}
-li:nth-child(2) {
-    -webkit-animation: fadeIn 0.5s 0.2s ease;
-    -moz-animation: fadeIn 0.5s 0.2s ease;
-    -ms-animation: fadeIn 0.5s 0.2s ease;
-    animation: fadeIn 0.5s 0.2s ease; 
-}
-li:nth-child(3) {
-    -webkit-animation: fadeIn 0.5s 0.3s ease;
-    -moz-animation: fadeIn 0.5s 0.3s ease;
-    -ms-animation: fadeIn 0.5s 0.3s ease;
-    animation: fadeIn 0.5s 0.3s ease; 
-}
-li:nth-child(4) {
-    -webkit-animation: fadeIn 0.5s 0.4s ease;
-    -moz-animation: fadeIn 0.5s 0.4s ease;
-    -ms-animation: fadeIn 0.5s 0.4s ease;
-    animation: fadeIn 0.5s 0.4s ease; 
-}
+.lomo:nth-child(1) {
+    -webkit-animation: fadeInUp 0.5s 0.1s ease;
+    -moz-animation: fadeInUp 0.5s 0.1s ease;
+    -ms-animation: fadeInUp 0.5s 0.1s ease;
+    animation: fadeInUp 0.5s 0.1s ease; }
+  .lomo:nth-child(2) {
+    -webkit-animation: fadeInUp 0.5s 0.2s ease;
+    -moz-animation: fadeInUp 0.5s 0.2s ease;
+    -ms-animation: fadeInUp 0.5s 0.2s ease;
+    animation: fadeInUp 0.5s 0.2s ease; }
+  .lomo:nth-child(3) {
+    -webkit-animation: fadeInUp 0.5s 0.3s ease;
+    -moz-animation: fadeInUp 0.5s 0.3s ease;
+    -ms-animation: fadeInUp 0.5s 0.3s ease;
+    animation: fadeInUp 0.5s 0.3s ease; }
+  .lomo:nth-child(4) {
+    -webkit-animation: fadeInUp 0.5s 0.4s ease;
+    -moz-animation: fadeInUp 0.5s 0.4s ease;
+    -ms-animation: fadeInUp 0.5s 0.4s ease;
+    animation: fadeInUp 0.5s 0.4s ease; }
+  .lomo:nth-child(5) {
+    -webkit-animation: fadeInUp 0.5s 0.5s ease;
+    -moz-animation: fadeInUp 0.5s 0.5s ease;
+    -ms-animation: fadeInUp 0.5s 0.5s ease;
+    animation: fadeInUp 0.5s 0.5s ease; }
+  .lomo:nth-child(6) {
+    -webkit-animation: fadeInUp 0.5s 0.6s ease;
+    -moz-animation: fadeInUp 0.5s 0.6s ease;
+    -ms-animation: fadeInUp 0.5s 0.6s ease;
+    animation: fadeInUp 0.5s 0.6s ease; }
+  .lomo {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }
 ````
 
 
