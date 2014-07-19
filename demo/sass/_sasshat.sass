@@ -252,6 +252,7 @@
 @mixin transition-timing-function($value...)
 	+prefixer(transition-timing-function, $value)
 @mixin user-select($value...)
+	-webkit-touch-callout: $value
 	+prefixer(user-select, $value)
 
 // For animate elements step by step
