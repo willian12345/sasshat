@@ -254,6 +254,8 @@
 @mixin user-select($value...)
 	-webkit-touch-callout: $value
 	+prefixer(user-select, $value)
+@mixin text-shadow($value...)
+	+prefixer(text-shadow, $value)
 
 // For animate elements step by step
 @mixin animateByFrame($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
@@ -282,3 +284,5 @@
 	@if not($applyElement)
 		#{$loopElement}
 			+animation-fill-mode(both!important)
+@mixin dominoAnimation($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
+	+animateByFrame($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
