@@ -40,11 +40,11 @@ body
 		line-height: 80px
 		background: rgba(#00AC90, .8)
 	// ***第1组从左向右延X轴翻转***
-	+animateByFrame(li,flipInX, 1, 8, .5s, 0, .1, ease)
+	+dominoAnimation(li,flipInX, 1, 8, .5s, 0, .1, ease)
 
 .row-list.flipY
 	li
 		height: 100px
 		line-height: 100px
 	// ***第2组从右向左延Y轴翻转***
-	+animateByFrame(li,flipInY, 8, 1, .5s, 0, .1, ease)
+	+dominoAnimation(li,flipInY, 8, 1, .5s, 0, .1, ease)
