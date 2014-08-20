@@ -79,7 +79,11 @@
 /////////////////////////////////////////////////////////
 
 body {
-	-webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
+	// Addresses a small issue in webkit: http://bit.ly/NEdoDq
+	-webkit-transform: translateZ(0);
+	//Or 
+	// -webkit-backface-visibility: hidden; 
+	// effect border-radius overflow hidden
 }
 .animated {
 	@include animate-prefixer(animation-duration, $base-duration);
