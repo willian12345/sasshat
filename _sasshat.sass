@@ -252,7 +252,8 @@
   +prefixer(transform-origin, $value)
 @mixin transform-style($value...)
   //flat | preserve-3d
-  +prefixer(transform-origin, $value)
+  -webkit-transform-origin: $value
+  transform-origin: $value
 /// value prefixed
 @mixin transition($value...)
   +prefixer(transition, $value)
