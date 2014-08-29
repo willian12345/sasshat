@@ -191,9 +191,6 @@
   -ms-flex-order: $value
   -webkit-order: $value 
   order: $value
-@mixin overflow-scrolling($value)
-  // auto | touch
-  +prefixer(overflow-scrolling, $value)
 //P
 @mixin perspective($value)
   +prefixer(perspective, $value)
@@ -252,8 +249,7 @@
   +prefixer(transform-origin, $value)
 @mixin transform-style($value...)
   //flat | preserve-3d
-  -webkit-transform-origin: $value
-  transform-origin: $value
+  +prefixer(transform-origin, $value)
 /// value prefixed
 @mixin transition($value...)
   +prefixer(transition, $value)
@@ -273,26 +269,43 @@
   +prefixer(text-shadow, $value)
 
 // For animate elements step by step
-@mixin dominoAnimation($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
+@mixin dominoAnimation($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false, $randomDelay: false)
   $startIndex: $start
   $delay:strip-units($delay)
   $delayInterval:strip-units($delayInterval)
   $j:0
+  $delayTime: 0s
   @for $i from $startIndex through $end
     $j: $j+1
     #{$loopElement}:nth-child(#{$i})
       @if $applyElement
         #{$applyElement}
           @if $start < $end
-            +animation($frameName $duration ($j * $delayInterval + $delay)+s $timmingFuc)
+            @if $randomDelay
+              $delayTime: random($randomDelay*10)/10+s
+            @else
+              $delayTime: ($j * $delayInterval + $delay)+s
+            +animation($frameName $duration $delayTime $timmingFuc)
           @else
-            +animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
+            @if $randomDelay
+              $delayTime: random($randomDelay*10)/10+s
+            @else
+              $delayTime: (($start - $i) * $delayInterval + $delay)+s
+            +animation($frameName $duration $delayTime $timmingFuc)
           
       @if not($applyElement)
         @if $start < $end
-          +animation($frameName $duration ($j * $delayInterval + $delay)+s $timmingFuc)
+          @if $randomDelay
+            $delayTime: random($randomDelay*10)/10+s
+          @else
+            $delayTime: ($j * $delayInterval + $delay)+s
+          +animation($frameName $duration $delayTime $timmingFuc)
         @else
-          +animation($frameName $duration (($start - $i) * $delayInterval + $delay)+s $timmingFuc)
+          @if $randomDelay
+            $delayTime: random($randomDelay*10)/10+s
+          @else
+            $delayTime: (($start - $i) * $delayInterval + $delay)+s
+          +animation($frameName $duration $delayTime $timmingFuc)
   @if $applyElement
     #{$applyElement}
       +animation-fill-mode(both!important)
