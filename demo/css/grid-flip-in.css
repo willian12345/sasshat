@@ -278,9 +278,6 @@ html, body {
   -moz-animation-name: flipInY;
   animation-name: flipInY; }
 
-body {
-  -webkit-backface-visibility: hidden; }
-
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
