@@ -332,9 +332,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
-  background: black url(../imgs/bg1.png) no-repeat;
-  background-size: 100% 100%; }
+  height: 100%; }
 
 .panel {
   padding: 10px; }
@@ -366,85 +364,85 @@ body {
     line-height: 80px;
     background: rgba(0, 172, 144, 0.8); }
   .row-list .anim:nth-child(1) {
-    -webkit-animation: slideRightIn3d 1s 0.31878s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.31878s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.31878s ease-in-out;
-    animation: slideRightIn3d 1s 0.31878s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.47412s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.47412s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.47412s ease-in-out;
+    animation: slideRightIn3d 1s 0.47412s ease-in-out; }
   .row-list .anim:nth-child(2) {
-    -webkit-animation: slideRightIn3d 1s 0.41221s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.41221s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.41221s ease-in-out;
-    animation: slideRightIn3d 1s 0.41221s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.56326s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.56326s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.56326s ease-in-out;
+    animation: slideRightIn3d 1s 0.56326s ease-in-out; }
   .row-list .anim:nth-child(3) {
-    -webkit-animation: slideRightIn3d 1s 0.17136s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.17136s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.17136s ease-in-out;
-    animation: slideRightIn3d 1s 0.17136s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.59406s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.59406s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.59406s ease-in-out;
+    animation: slideRightIn3d 1s 0.59406s ease-in-out; }
   .row-list .anim:nth-child(4) {
-    -webkit-animation: slideRightIn3d 1s 0.39163s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.39163s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.39163s ease-in-out;
-    animation: slideRightIn3d 1s 0.39163s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.14091s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.14091s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.14091s ease-in-out;
+    animation: slideRightIn3d 1s 0.14091s ease-in-out; }
   .row-list .anim:nth-child(5) {
-    -webkit-animation: slideRightIn3d 1s 0.26731s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.26731s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.26731s ease-in-out;
-    animation: slideRightIn3d 1s 0.26731s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.54697s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.54697s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.54697s ease-in-out;
+    animation: slideRightIn3d 1s 0.54697s ease-in-out; }
   .row-list .anim:nth-child(6) {
-    -webkit-animation: slideRightIn3d 1s 0.29897s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.29897s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.29897s ease-in-out;
-    animation: slideRightIn3d 1s 0.29897s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.15972s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.15972s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.15972s ease-in-out;
+    animation: slideRightIn3d 1s 0.15972s ease-in-out; }
   .row-list .anim:nth-child(7) {
-    -webkit-animation: slideRightIn3d 1s 0.30623s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.30623s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.30623s ease-in-out;
-    animation: slideRightIn3d 1s 0.30623s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.33073s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.33073s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.33073s ease-in-out;
+    animation: slideRightIn3d 1s 0.33073s ease-in-out; }
   .row-list .anim:nth-child(8) {
-    -webkit-animation: slideRightIn3d 1s 0.53253s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.53253s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.53253s ease-in-out;
-    animation: slideRightIn3d 1s 0.53253s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.33143s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.33143s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.33143s ease-in-out;
+    animation: slideRightIn3d 1s 0.33143s ease-in-out; }
   .row-list .anim:nth-child(9) {
-    -webkit-animation: slideRightIn3d 1s 0.5274s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.5274s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.5274s ease-in-out;
-    animation: slideRightIn3d 1s 0.5274s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.43792s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.43792s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.43792s ease-in-out;
+    animation: slideRightIn3d 1s 0.43792s ease-in-out; }
   .row-list .anim:nth-child(10) {
-    -webkit-animation: slideRightIn3d 1s 0.20079s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.20079s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.20079s ease-in-out;
-    animation: slideRightIn3d 1s 0.20079s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.19927s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.19927s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.19927s ease-in-out;
+    animation: slideRightIn3d 1s 0.19927s ease-in-out; }
   .row-list .anim:nth-child(11) {
-    -webkit-animation: slideRightIn3d 1s 0.40136s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.40136s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.40136s ease-in-out;
-    animation: slideRightIn3d 1s 0.40136s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.35551s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.35551s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.35551s ease-in-out;
+    animation: slideRightIn3d 1s 0.35551s ease-in-out; }
   .row-list .anim:nth-child(12) {
-    -webkit-animation: slideRightIn3d 1s 0.45275s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.45275s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.45275s ease-in-out;
-    animation: slideRightIn3d 1s 0.45275s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.20002s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.20002s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.20002s ease-in-out;
+    animation: slideRightIn3d 1s 0.20002s ease-in-out; }
   .row-list .anim:nth-child(13) {
-    -webkit-animation: slideRightIn3d 1s 0.4238s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.4238s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.4238s ease-in-out;
-    animation: slideRightIn3d 1s 0.4238s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.28718s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.28718s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.28718s ease-in-out;
+    animation: slideRightIn3d 1s 0.28718s ease-in-out; }
   .row-list .anim:nth-child(14) {
-    -webkit-animation: slideRightIn3d 1s 0.58456s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.58456s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.58456s ease-in-out;
-    animation: slideRightIn3d 1s 0.58456s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.56488s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.56488s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.56488s ease-in-out;
+    animation: slideRightIn3d 1s 0.56488s ease-in-out; }
   .row-list .anim:nth-child(15) {
-    -webkit-animation: slideRightIn3d 1s 0.50363s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.50363s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.50363s ease-in-out;
-    animation: slideRightIn3d 1s 0.50363s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.36162s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.36162s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.36162s ease-in-out;
+    animation: slideRightIn3d 1s 0.36162s ease-in-out; }
   .row-list .anim:nth-child(16) {
-    -webkit-animation: slideRightIn3d 1s 0.39694s ease-in-out;
-    -moz-animation: slideRightIn3d 1s 0.39694s ease-in-out;
-    -ms-animation: slideRightIn3d 1s 0.39694s ease-in-out;
-    animation: slideRightIn3d 1s 0.39694s ease-in-out; }
+    -webkit-animation: slideRightIn3d 1s 0.5756s ease-in-out;
+    -moz-animation: slideRightIn3d 1s 0.5756s ease-in-out;
+    -ms-animation: slideRightIn3d 1s 0.5756s ease-in-out;
+    animation: slideRightIn3d 1s 0.5756s ease-in-out; }
   .row-list .anim {
     -webkit-animation-fill-mode: both !important;
     -moz-animation-fill-mode: both !important;

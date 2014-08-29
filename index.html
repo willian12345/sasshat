@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="wrap">
-    <h1>DEMO</h1>
+    <h1 id="demoName">SASSHAT ANIMATION DEMO</h1>
     <ul>
         <li>
             <a href="demo/grid-3d-random.html" onclick="show(event, this)">grid-3d-random</a>
@@ -46,7 +46,9 @@
             <a href="demo/demo6.html" onclick="show(event, this)">demo6</a>
         </li>
     </ul>
-    <iframe src="demo/iframe.html" width="320" height="480" id="iphone" frameborder="0"></iframe>    
+    <div class="iphone-wrap">
+        <iframe src="demo/iframe.html" width="320" height="500" id="iphone" frameborder="0"></iframe>    
+    </div>
 </div>
 
 <footer>
@@ -56,6 +58,7 @@
 
     function show(event, elem){
         document.getElementById('iphone').src = elem.href;
+        document.getElementById('demoName').innerHTML = elem.innerHTML;
         return event.preventDefault();
     }
 </script>

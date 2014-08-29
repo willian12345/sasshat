@@ -312,9 +312,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
-  background: black url(../imgs/bg1.png) no-repeat;
-  background-size: 100% 100%; }
+  height: 100%; }
 
 .panel {
   padding: 10px; }
