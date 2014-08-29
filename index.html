@@ -6,55 +6,58 @@
     <meta name="description" content="sasshat" />
     <meta name ="viewport" content ="initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <title>index</title>
-    <style type="text/css">
-        a{
-            line-height: 2em;
-        }
-        h1{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="demo/css/index.css">
 </head>
 <body>
-<h1>DEMO</h1>
-<h4>适用于移动端web</h4>
-<ul>
-    <li>
-        <a href="demo/grid-3d-random.html">grid-3d-random</a>
-    </li>
-    <li>
-        <a href="demo/grid-flip-in.html">grid-flip-in</a>
-    </li>
-    <li>
-        <a href="demo/slide-from-bottom.html">slide-from-bottom</a>
-    </li>
-    <li>
-        <a href="demo/scale-in.html">scale-in</a>
-    </li>
-    <li>
-        <a href="demo/zipper.html">zipper</a>
-    </li>
-    <li>
-        <a href="demo/demo1.html">demo1</a>
-    </li>
-    <li>
-        <a href="demo/demo2.html">demo2</a>
-    </li>
-    <li>
-        <a href="demo/demo3.html">demo3</a>
-    </li>
-    <li>
-        <a href="demo/demo4.html">demo4</a>
-    </li>
-    <li>
-        <a href="demo/demo5.html">demo5</a>
-    </li>
-    <li>
-        <a href="demo/demo6.html">demo6</a>
-    </li>
-</ul>
+<div class="wrap">
+    <h1>DEMO</h1>
+    <ul>
+        <li>
+            <a href="demo/grid-3d-random.html" onclick="show(event, this)">grid-3d-random</a>
+        </li>
+        <li>
+            <a href="demo/grid-flip-in.html" onclick="show(event, this)">grid-flip-in</a>
+        </li>
+        <li>
+            <a href="demo/slide-from-bottom.html" onclick="show(event, this)">slide-from-bottom</a>
+        </li>
+        <li>
+            <a href="demo/scale-in.html" onclick="show(event, this)">scale-in</a>
+        </li>
+        <li>
+            <a href="demo/zipper.html" onclick="show(event, this)">zipper</a>
+        </li>
+        <li>
+            <a href="demo/demo1.html" onclick="show(event, this)">demo1</a>
+        </li>
+        <li>
+            <a href="demo/demo2.html" onclick="show(event,this)">demo2</a>
+        </li>
+        <li>
+            <a href="demo/demo3.html" onclick="show(event, this)">demo3</a>
+        </li>
+        <li>
+            <a href="demo/demo4.html" onclick="show(event, this)">demo4</a>
+        </li>
+        <li>
+            <a href="demo/demo5.html" onclick="show(event, this)">demo5</a>
+        </li>
+        <li>
+            <a href="demo/demo6.html" onclick="show(event, this)">demo6</a>
+        </li>
+    </ul>
+    <iframe src="demo/iframe.html" width="320" height="480" id="iphone" frameborder="0"></iframe>    
+</div>
+
 <footer>
     copyright: 2gou [ willian12345@126.com ]
 </footer>
+<script>
+
+    function show(event, elem){
+        document.getElementById('iphone').src = elem.href;
+        return event.preventDefault();
+    }
+</script>
 </body>
 </html>

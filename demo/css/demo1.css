@@ -187,9 +187,6 @@ html, body {
   -moz-animation-name: rollIn;
   animation-name: rollIn; }
 
-body {
-  -webkit-backface-visibility: hidden; }
-
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
@@ -249,7 +246,7 @@ h1 {
     padding-bottom: 10px; }
   .row-list .type {
     text-align: center;
-    line-height: 40px; }
+    line-height: 20px; }
     .row-list .type.clicked {
       background: rgba(255, 127, 17, 0.8); }
     .row-list .type.flower {
