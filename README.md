@@ -49,13 +49,13 @@ div{
 - “多米诺”动画让animation动画更酷
 
 ##DEMO
-先看做的几个 **[DEMOs](http://sugarcane-mall.com/sasshat/)** 
+先看做的几个 **[DEMOs](http://www.xbole.com/sasshat/)** 
 
 ##“多米诺”动画
 多米諾骨牌，即碰倒第一枚骨牌，其余的骨牌就会产生连锁反应，依次倒下。
 “多米诺”动画即引申自多米诺骨牌，即让一连串的HTML元素延时依次逐个完成相应的动画效果。
 
-**[DEMOs](http://sugarcane-mall.com/sasshat/)** 
+**[DEMOs](http://www.xbole.com/sasshat/)** 
 
 sasshat多米诺动画具体的CSS3动画其实是集成自**[animate.css](http://daneden.github.io/animate.css)** 动画库。所以在编写多米諾动画时实现一些常见的效果已经不需要你去编写keyframes动画帧了，直接调用已经编写好的keyframes名称就可以.
 
