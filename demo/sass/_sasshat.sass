@@ -191,6 +191,9 @@
   -ms-flex-order: $value
   -webkit-order: $value 
   order: $value
+@mixin overflow-scrolling($value)
+  // auto | touch
+  +prefixer(overflow-scrolling, $value)
 //P
 @mixin perspective($value)
   +prefixer(perspective, $value)
