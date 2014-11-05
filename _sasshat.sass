@@ -4,6 +4,7 @@
  * Author: wang.2gou
  * Email: willian12345@126.com
  * Date: 2014-06-06
+ * update: 201411051032
  * Vertion: Beta
  * Github: https://github.com/willian12345/sasshat
  * Sass-version: Sass@3.7.7
@@ -199,14 +200,14 @@
   +prefixer(perspective, $value)
 @mixin perspective-origin($value...)
   +prefixer(perspective-origin, $value)
-@mixin placeholder()
-  input::-webkit-input-placeholder
+@mixin placeholder($elem: input)
+  #{$elem}::-webkit-input-placeholder
     @content
-  input::-moz-input-placeholder
+  #{$elem}::-moz-input-placeholder
     @content
-  input::-ms-input-placeholder
+  #{$elem}::-ms-input-placeholder
     @content
-  input::input-placeholder
+  #{$elem}::#{$elem}-placeholder
     @content
 
 
