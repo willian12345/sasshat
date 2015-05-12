@@ -403,19 +403,18 @@ table {
   border-spacing: 0;
 }
 
-/*
-  by willian12345@126.com
- */
+// 2gou
 ul{
   list-style:none
 }
-h1,h2,h3,h4,ul,body,dl,dd,p{
+h1,h2,h3,h4,h5,ul,body,dl,dd,p{
   margin: 0;
   padding: 0;
 }
 i{
   font-style: normal;
 }
+
 a, img {
     -webkit-touch-callout: none;
 }
@@ -425,6 +424,9 @@ a{
 }
 img{
   vertical-align: middle;
+}
+a,a:hover{
+  text-decoration: none
 }
 html, body {
     -webkit-user-select: none;
