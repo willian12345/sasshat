@@ -1,0 +1,65 @@
+@charset "utf-8"
+@import '_normalize.scss','_sasshat.sass'
+// 导入 fadeInLeft.scss
+// 导入 fadeInRight.scss
+@import "animate/fading_entrances/fadeInLeft.scss"
+@import "animate/fading_entrances/fadeInRight.scss"
+
+
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+@mixin clearfix()
+	&:before,&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+html
+	width: 100%
+	height: 100%
+body
+	width: 100%
+	height: 100%
+	background: rgb(19, 170, 140)
+	background-size: 100% 100%
+.clearfix
+	+clearfix()
+.panel
+	padding: 10px
+.row-list
+	position: relative
+	li
+		+display(flex)
+		padding-bottom: 10px
+	.type
+		width: 80px
+		height: 80px
+		text-align: center
+		line-height: 108px
+		&.clicked
+			background: #ff7f11
+		&.flower
+			background: #1daffc
+		&.s-novel
+			background: #5db582
+		&.l-novel
+			background: #e74b4e
+	.ico
+		display: inline-block
+		width: 40px
+		height: 40px
+		border: 2px solid white
+		+border-radius(100%)
+	h2
+		padding: 8px 0
+		color: #fff
+	.desc
+		color: #fff
+	.info
+		+flex(1)
+		padding-left: 10px
+	
+	+dominoAnimation($loopElement:li,$frameName:fadeInLeft, $start:1, $end:4, $applyElement:'.type')
+	+dominoAnimation(li,fadeInRight, 1, 4, .5s, 0, .1, ease, '.info')

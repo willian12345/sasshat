@@ -1,0 +1,60 @@
+@charset "utf-8"
+@import '_normalize.scss','_sasshat.sass'
+// 导入 flip.scss
+// 导入 fadeInUpBig.scss
+// 导入 fadeInDown.scss
+@import "animate/flippers/flip.scss"
+@import "animate/fading_entrances/fadeInUpBig.scss"
+@import "animate/fading_entrances/fadeInDown.scss"
+
+
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+@mixin clearfix()
+	&:before,&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+html
+	width: 100%
+	height: 100%
+body
+	width: 100%
+	height: 100%
+.clearfix
+	+clearfix()
+.panel
+	padding: 10px
+.row-list
+	position: relative
+	li
+
+		padding-bottom: 10px
+	.type
+		text-align: center
+		line-height: 40px
+		&.clicked
+			background: rgba(#ff7f11,.9)
+		&.flower
+			background: rgba(#1daffc,.9)
+		&.s-novel
+			background: rgba(#5db582,.9)
+		&.l-novel
+			background: rgba(#e74b4e,.9)
+	.ico
+		display: inline-block
+		width: 50px
+		height: 50px
+		margin-top: 20px
+		border: 2px solid white
+		+border-radius(100%)
+	h2
+		padding: 8px 0
+		color: #fff
+
+	+dominoAnimation(li,flip, 1, 4, .5s)
+	+dominoAnimation(li,fadeInDown, 1, 4, .5s, 1, .1, ease,'.ico')
+	+dominoAnimation(li,fadeInUpBig, 1, 4, .5s, 1, .1, ease, 'h2')

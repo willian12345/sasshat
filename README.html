@@ -1,0 +1,286 @@
+<h1>sasshat</h1>
+
+<p><em>简单易用的SASS库</em>
+<em>The simple and easy sass library</em></p>
+
+<hr />
+
+<p>这是个sass库，专为sass语言，如果你用的是LESS，请移步这个LESS高大上的库
+<strong><a href="http://lesshat.com">lesshat.com</a></strong></p>
+
+<h2>DEMO</h2>
+
+<p>先看做的几个 <strong><a href="http://www.xbole.com/sasshat/">DEMOs</a></strong></p>
+
+<p><img src="https://github.com/willian12345/sasshat/imgs/a0.gif?raw=true" alt="image" /></p>
+
+<p><img src="https://github.com/willian12345/sasshat/imgs/a2.gif?raw=true" alt="image" /></p>
+
+<p><img src="https://github.com/willian12345/sasshat/imgs/a3.gif?raw=true" alt="image" /></p>
+
+<p><img src="https://github.com/willian12345/sasshat/imgs/start.gif?raw=true" alt="image" /></p>
+
+<p><img src="https://github.com/willian12345/sasshat/imgs/Untitled.gif?raw=true" alt="image" /></p>
+
+<h2>代码使用例子</h2>
+
+<h4>风骚的 sass 写法</h4>
+
+<p>````
+div
+    +box-shadow(1px 1px 2px #000)</p>
+
+<p>````</p>
+
+<h4>或保守的 scss 写法</h4>
+
+<p>````
+div{
+    @include box-shadow(1px 1px 2px #000);
+}</p>
+
+<p>````</p>
+
+<h4>编译结果</h4>
+
+<p><code>
+// Results
+div{
+    -webkit-box-shadow: 1px 1px 2px black;
+    -moz-box-shadow: 1px 1px 2px black;
+    -ms-box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px black;
+}
+</code></p>
+
+<h2>Get Started</h2>
+
+<p>1、新建一个以.sass或.scss结尾的文件如： demo.sass或demo.scss</p>
+
+<p>2、在文件中引入如：<code>@import '_sasshat.sass'</code></p>
+
+<p>3、现在可以开始写你自己的sass了</p>
+
+<h2>特点</h2>
+
+<ul>
+<li>书写css3更方便</li>
+<li>特别适合手机web页面</li>
+<li>“多米诺”动画让animation动画更酷</li>
+</ul>
+
+
+<h2>“多米诺”动画</h2>
+
+<p>多米諾骨牌，即碰倒第一枚骨牌，其余的骨牌就会产生连锁反应，依次倒下。
+“多米诺”动画即引申自多米诺骨牌，即让一连串的HTML元素延时依次逐个完成相应的动画效果。</p>
+
+<p><strong><a href="http://www.xbole.com/sasshat/">DEMOs</a></strong></p>
+
+<p>sasshat多米诺动画具体的CSS3动画其实是集成自<strong><a href="http://daneden.github.io/animate.css">animate.css</a></strong> 动画库。所以在编写多米諾动画时实现一些常见的效果已经不需要你去编写keyframes动画帧了，直接调用已经编写好的keyframes名称就可以.</p>
+
+<p>为了减小css体积，请只导入要使用到的动画模块。
+全部的动画模块已改成scss后缀，文件来源于animate.css项目</p>
+
+<h4>编写“多米诺”动画的写法</h4>
+
+<p>1、先设置某个动画变量为true</p>
+
+<p>2、导入_sasshat.sass文件和要用到的动画.scss文件</p>
+
+<p><code>
+@import '_animate.scss','_sasshat.sass'
+@import "animate/fading_entrances/fadeInUp.scss"
+</code>
+3、调用多米诺动画函数</p>
+
+<p><code>
++dominoAnimation(".lomo",fadeInUp, 1, 6)
+</code></p>
+
+<h5>Results</h5>
+
+<p>````
+// 编译后就会生成以下内容，形成元素逐个按延时长短形成动画
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); }</p>
+
+<p>  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px); }</p>
+
+<p>  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px); }</p>
+
+<p>  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }</p>
+
+<p>  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  animation-name: fadeInUp; }</p>
+
+<p>.lomo:nth-child(1) {
+    -webkit-animation: fadeInUp 0.5s 0.1s ease;
+    -moz-animation: fadeInUp 0.5s 0.1s ease;
+    -ms-animation: fadeInUp 0.5s 0.1s ease;
+    animation: fadeInUp 0.5s 0.1s ease; }
+  .lomo:nth-child(2) {
+    -webkit-animation: fadeInUp 0.5s 0.2s ease;
+    -moz-animation: fadeInUp 0.5s 0.2s ease;
+    -ms-animation: fadeInUp 0.5s 0.2s ease;
+    animation: fadeInUp 0.5s 0.2s ease; }
+  .lomo:nth-child(3) {
+    -webkit-animation: fadeInUp 0.5s 0.3s ease;
+    -moz-animation: fadeInUp 0.5s 0.3s ease;
+    -ms-animation: fadeInUp 0.5s 0.3s ease;
+    animation: fadeInUp 0.5s 0.3s ease; }
+  .lomo:nth-child(4) {
+    -webkit-animation: fadeInUp 0.5s 0.4s ease;
+    -moz-animation: fadeInUp 0.5s 0.4s ease;
+    -ms-animation: fadeInUp 0.5s 0.4s ease;
+    animation: fadeInUp 0.5s 0.4s ease; }
+  .lomo:nth-child(5) {
+    -webkit-animation: fadeInUp 0.5s 0.5s ease;
+    -moz-animation: fadeInUp 0.5s 0.5s ease;
+    -ms-animation: fadeInUp 0.5s 0.5s ease;
+    animation: fadeInUp 0.5s 0.5s ease; }
+  .lomo:nth-child(6) {
+    -webkit-animation: fadeInUp 0.5s 0.6s ease;
+    -moz-animation: fadeInUp 0.5s 0.6s ease;
+    -ms-animation: fadeInUp 0.5s 0.6s ease;
+    animation: fadeInUp 0.5s 0.6s ease; }
+  .lomo {
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    -ms-animation-fill-mode: both !important;
+    animation-fill-mode: both !important; }
+````</p>
+
+<h4>CSS3动画的优点（具体需要看浏览器实现）</h4>
+
+<p>1.不占用js主线程</p>
+
+<p>2.可利用硬件加速</p>
+
+<p>3.浏览器可对动画做优化(元素不可见时不动画, 减少对FPS的影响)</p>
+
+<h4>dominoAnimation函数</h4>
+
+<h5>写法可以有以下几种，根据实际HTML结构选择使用</h5>
+
+<p>````
++dominoAnimation(li,scaleIn, 1, 4, .5s)
++dominoAnimation(li,scaleIn, 4, 1, .5s)
++dominoAnimation($loopElement:li,$frameName:fadeInLeft, $start:1, $end:4, $applyElement:&lsquo;.type&rsquo;)</p>
+
+<p>````</p>
+
+<h2><a name="documentation"></a> API文档:</h2>
+
+<hr />
+
+<h3>混合函数列表:</h3>
+
+<ol>
+<li><strong><a href="#align-content">align-content</a></strong> <code>flexbox</code></li>
+<li><strong><a href="#align-items">align-items</a></strong> <code>flexbox</code></li>
+<li><strong><a href="#align-self">align-self</a></strong> <code>flexbox</code></li>
+<li><strong><a href="#animation">animation</a></strong></li>
+<li><strong><a href="#animation-delay">animation-delay</a></strong></li>
+<li><strong><a href="#animation-direction">animation-direction</a></strong></li>
+<li><strong><a href="#animation-duration">animation-duration</a></strong></li>
+<li><strong><a href="#animation-fill-mode">animation-fill-mode</a></strong></li>
+<li><strong><a href="#animation-iteration-count">animation-iteration-count</a></strong></li>
+<li><strong><a href="#animation-name">animation-name</a></strong></li>
+<li><strong><a href="#animation-play-state">animation-play-state</a></strong></li>
+<li><strong><a href="#animation-timing-function">animation-timing-function</a></strong></li>
+<li><strong><a href="#appearance">appearance</a></strong></li>
+<li><strong><a href="#backface-visibility">backface-visibility</a></strong></li>
+<li><strong><a href="#background-clip">background-clip</a></strong></li>
+<li><strong><a href="#background-origin">background-origin</a></strong></li>
+<li><strong><a href="#background-size">background-size</a></strong></li>
+<li><strong><a href="#blur">blur</a></strong> <code>filter</code></li>
+<li><strong><a href="#border-bottom-left-radius">border-bottom-left-radius</a></strong></li>
+<li><strong><a href="#border-bottom-right-radius">border-bottom-right-radius</a></strong></li>
+<li><strong><a href="#border-radius">border-radius</a></strong></li>
+<li><strong><a href="#border-top-left-radius">border-top-left-radius</a></strong></li>
+<li><strong><a href="#border-top-right-radius">border-top-right-radius</a></strong></li>
+<li><strong><a href="#box-shadow">box-shadow</a></strong></li>
+<li><strong><a href="#box-sizing">box-sizing</a></strong></li>
+<li><strong><a href="#brightness">brightness</a></strong> <code>filter</code></li>
+<li><strong><a href="#calc">calc</a></strong></li>
+<li><strong><a href="#column-count">column-count</a></strong></li>
+<li><strong><a href="#column-gap">column-gap</a></strong></li>
+<li><strong><a href="#column-rule">column-rule</a></strong></li>
+<li><strong><a href="#column-width">column-width</a></strong></li>
+<li><strong><a href="#columns">columns</a></strong></li>
+<li><strong><a href="#contrast">contrast</a></strong> <code>filter</code></li>
+<li><strong><a href="#display">display</a></strong> <code>flexbox</code></li>
+<li><strong><a href="#drop-shadow">drop-shadow</a></strong> <code>filter</code></li>
+<li><strong><a href="#filter">filter</a></strong></li>
+<li><strong><a href="#flex">flex</a></strong> <code>flexbox</code></li>
+<li><strong><a href="#flex-wrap">flex-wrap</a></strong> <code>flexbox</code></li>
+<li><strong><a href="#font-face">font-face</a></strong></li>
+<li><strong><a href="#grayscale">grayscale</a></strong> <code>filter</code></li>
+<li><strong><a href="#hue-rotate">hue-rotate</a></strong> <code>filter</code></li>
+<li><strong><a href="#justify-content">justify-content</a></strong> <code>flexbox</code></li>
+<li><strong><a href="#keyframes">keyframes</a></strong></li>
+<li><strong><a href="#opacity">opacity</a></strong></li>
+<li><strong><a href="#order">order</a></strong></li>
+<li><strong><a href="#perspective">perspective</a></strong></li>
+<li><strong><a href="#perspective-origin">perspective-origin</a></strong></li>
+<li><strong><a href="#placeholder">placeholder</a></strong></li>
+<li><strong><a href="#rotate">rotate</a></strong> <code>transform</code></li>
+<li><strong><a href="#rotate3d">rotate3d</a></strong> <code>transform</code></li>
+<li><strong><a href="#rotateX">rotateX</a></strong> <code>transform</code></li>
+<li><strong><a href="#rotateY">rotateY</a></strong> <code>transform</code></li>
+<li><strong><a href="#rotateZ">rotateZ</a></strong> <code>transform</code></li>
+<li><strong><a href="#scale">scale</a></strong> <code>transform</code></li>
+<li><strong><a href="#scale3d">scale3d</a></strong> <code>transform</code></li>
+<li><strong><a href="#scaleX">scaleX</a></strong> <code>transform</code></li>
+<li><strong><a href="#scaleY">scaleY</a></strong> <code>transform</code></li>
+<li><strong><a href="#scaleZ">scaleZ</a></strong> <code>transform</code></li>
+<li><strong><a href="#selection">selection</a></strong></li>
+<li><strong><a href="#sepia">sepia</a></strong> <code>filter</code></li>
+<li><strong><a href="#size">size</a></strong> <code>width, height</code></li>
+<li><strong><a href="#skew">skew</a></strong> <code>transform</code></li>
+<li><strong><a href="#skewX">skewX</a></strong> <code>transform</code></li>
+<li><strong><a href="#skewY">skewY</a></strong> <code>transform</code></li>
+<li><strong><a href="#transform">transform</a></strong></li>
+<li><strong><a href="#transform-origin">transform-origin</a></strong></li>
+<li><strong><a href="#transform-style">transform-style</a></strong></li>
+<li><strong><a href="#transition">transition</a></strong></li>
+<li><strong><a href="#transition-delay">transition-delay</a></strong></li>
+<li><strong><a href="#transition-duration">transition-duration</a></strong></li>
+<li><strong><a href="#transition-property">transition-property</a></strong></li>
+<li><strong><a href="#transition-timing-function">transition-timing-function</a></strong></li>
+<li><strong><a href="#translate">translate</a></strong> <code>transform</code></li>
+<li><strong><a href="#translate3d">translate3d</a></strong> <code>transform</code></li>
+<li><strong><a href="#translateX">translateX</a></strong> <code>transform</code></li>
+<li><strong><a href="#translateY">translateY</a></strong> <code>transform</code></li>
+<li><strong><a href="#translateZ">translateZ</a></strong> <code>transform</code></li>
+<li><strong><a href="#user-select">user-select</a></strong></li>
+</ol>
+
+
+<hr />

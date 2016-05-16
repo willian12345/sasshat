@@ -1,0 +1,61 @@
+@charset "utf-8"
+@import '_normalize.scss','_sasshat.sass'
+// 导入 fadeInDown.scss
+// 导入 fadeInUp.scss
+@import "animate/fading_entrances/fadeInDown.scss"
+@import "animate/fading_entrances/fadeInUp.scss"
+
+*,
+*:before,
+*:after
+	+box-sizing(border-box)
+@mixin clearfix()
+	&:before,&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+html
+	width: 100%
+	height: 100%
+body
+	width: 100%
+	height: 100%
+.panel
+	padding: 10px
+	max-width: 600px
+	min-width: 300px
+	margin: 0 auto
+.row-list
+	+animation(fadeInDown .2s .5s ease-out)
+	+animation-fill-mode(both)
+	+clearfix()
+	margin-top: 40px
+	padding: 20px
+	background: rgba(48, 175, 154, 0.8)
+	color: #fff
+	.info
+		position: absolute
+		left: 8px
+		top: 50%
+		margin-top: -10px
+		text-align: center
+		font-size: 14px
+		font-weight: bold
+		color: #fff
+		padding-right: 8px
+		text-align: right
+	li
+		position: relative
+		width: 100%
+		padding: 8px 8px 8px 58px
+		height: 40px
+		line-height: 40px
+	.ipt
+		color: #000
+		border: none
+	.row-r
+		width: 100%
+
+	// 核心逐帧动画代码
+	+dominoAnimation(li,fadeInUp, 1, 5, .5s, .6, .1, ease)

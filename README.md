@@ -8,6 +8,21 @@
 这是个sass库，专为sass语言，如果你用的是LESS，请移步这个LESS高大上的库
 **[lesshat.com](http://lesshat.com)**
 
+##DEMO
+先看做的几个 **[DEMOs](http://www.xbole.com/sasshat/)** 
+
+
+![image](https://github.com/willian12345/sasshat/imgs/a0.gif?raw=true)
+
+![image](https://github.com/willian12345/sasshat/imgs/a2.gif?raw=true)
+
+![image](https://github.com/willian12345/sasshat/imgs/a3.gif?raw=true)
+
+![image](https://github.com/willian12345/sasshat/imgs/start.gif?raw=true)
+
+![image](https://github.com/willian12345/sasshat/imgs/Untitled.gif?raw=true)
+
+
 ##代码使用例子
 ####风骚的 sass 写法
 ````
@@ -48,8 +63,7 @@ div{
 - 特别适合手机web页面
 - “多米诺”动画让animation动画更酷
 
-##DEMO
-先看做的几个 **[DEMOs](http://www.xbole.com/sasshat/)** 
+
 
 ##“多米诺”动画
 多米諾骨牌，即碰倒第一枚骨牌，其余的骨牌就会产生连锁反应，依次倒下。
@@ -59,114 +73,20 @@ div{
 
 sasshat多米诺动画具体的CSS3动画其实是集成自**[animate.css](http://daneden.github.io/animate.css)** 动画库。所以在编写多米諾动画时实现一些常见的效果已经不需要你去编写keyframes动画帧了，直接调用已经编写好的keyframes名称就可以.
 
-为了适应SASS语法，某位老兄已经将其转换为**[animate.sass](https://github.com/adamstac/animate.sass)**了，我直接将其copy到sasshat的目录中了
-
-可调用已有的keyframes名称
-#####Fade Enter
-
-- fadeIn 	
-- fadeInUp 	
-- fadeInUpBig 
-- fadeInDown 
-- fadeInDownBig 
-- fadeInLeft 
-- fadeInLeftBig 
-- fadeInRight 
-- fadeInRightBig
+为了减小css体积，请只导入要使用到的动画模块。
+全部的动画模块已改成scss后缀，文件来源于animate.css项目
 
 
-#####Fade Exit
-
-- fadeOut			
-- fadeOutUp	
-- fadeOutUpBig  
-- fadeOutDown
-- fadeOutDownBig
-- fadeOutLeft
-- fadeOutLeftBig
-- fadeOutRight
-- fadeOutRightBi
-
-
-#####Bounce Enter
-
-- bounceIn	
-- bounceInUp			
-- bounceInDown 		
-- bounceInLeft 		
-- bounceInRight 		
-
-
-#####Bounce Exit
-
-- bounceOut	
-- bounceOutUp		
-- bounceOutDown 		
-- bounceOutLeft 		
-- bounceOutRight 	
-
-
-
-#####Rotate Enter
-
-- rotateIn 	
-- rotateInUpLeft 	
-- rotateInUpRight 	
-- rotateInDownLeft 	
-- rotateInDownRight 	
-
-
-#####Rotate Exit
-
-- rotateOut 	
-- rotateOutUpLeft 	
-- rotateOutUpRight 	
-- rotateOutDownLeft 	
-- rotateOutDownRight 
-
-
-#####Flippers
-
-- flip		
-- flipInX	
-- flipInY	
-- flipOutX	
-- flipOutY	
-
-
-#####Lightspeed
-
-- lightSpeedIn 
-- lightSpeedOut 	
-
-
-#####Attention Seekers
-
-- bounce		
-- flash		
-- pulse		
-- wiggle		
-- swing		
-- shake		
-- tada		
-- wobble		
-
-
-#####Special
-
-- hinge		
-- rollIn				
-- rollOut 	
 
 ####编写“多米诺”动画的写法
 
 1、先设置某个动画变量为true
 
-2、导入 _animate.scss 和 _sasshat.sass文件
+2、导入_sasshat.sass文件和要用到的动画.scss文件
 
 ````
-$use-fadeInUp: true
 @import '_animate.scss','_sasshat.sass'
+@import "animate/fading_entrances/fadeInUp.scss"
 ````
 3、调用多米诺动画函数
 
