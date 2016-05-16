@@ -9,8 +9,10 @@
 **[lesshat.com](http://lesshat.com)**
 
 ##DEMO
-先看做的几个 **[DEMOs](http://www.xbole.com/sasshat/)** 
+先看做的几个
+###**[DEMOs](http://www.xbole.com/sasshat/)** 
 
+###下面是几个gif是某app内hybrid形式嵌入去网页内动画截图
 
 ![image](https://github.com/willian12345/sasshat/blob/master/imgs/a0.gif?raw=true)
 
