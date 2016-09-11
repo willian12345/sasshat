@@ -146,6 +146,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/ddd.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ddd.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/demo1.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -200,29 +209,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/grid-3d-random.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/grid-3d-random.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/grid-flip-in.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/grid-flip-in.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/icon-font-demo.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/icon-font-demo.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -256,6 +247,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/README.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -284,111 +284,165 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/_sasshat.sass": {
+	"\/sass\/animate\/attention_seekers\/bounce.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"fileType": 2,
-		"ignore": 1,
+		"fileType": 4,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/_sasshat.sass",
-		"outputAbbreviatedPath": "\/css\/_sasshat.css",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/bounce.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/bounce.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": false
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/bounce.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/flash.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/bounce.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/flash.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/flash.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/flash.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/headShake.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/flash.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/headShake.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/headShake.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/headShake.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/jello.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/headShake.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/jello.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/jello.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/jello.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/pulse.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/jello.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/pulse.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/pulse.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/pulse.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/rubberBand.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/pulse.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/rubberBand.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/rubberBand.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/rubberBand.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/shake.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/rubberBand.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/shake.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/shake.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/shake.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/swing.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/shake.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/swing.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/swing.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/swing.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/tada.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/swing.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/tada.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/tada.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/attention_seekers\/tada.css": {
-		"fileType": 16,
+	"\/sass\/animate\/attention_seekers\/wobble.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/tada.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/wobble.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/wobble.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/sass\/animate\/attention_seekers\/wobble.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/attention_seekers\/wobble.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/sass\/animate\/bouncing_entrances\/bounceIn.scss": {
 		"createSourceMap": 0,
@@ -470,50 +524,85 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/animate\/bouncing_exits\/bounceOut.css": {
-		"fileType": 16,
+	"\/sass\/animate\/bouncing_exits\/bounceOut.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOut.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOut.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/bounceOut.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/bouncing_exits\/bounceOutDown.css": {
-		"fileType": 16,
+	"\/sass\/animate\/bouncing_exits\/bounceOutDown.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutDown.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutDown.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/bounceOutDown.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/bouncing_exits\/bounceOutLeft.css": {
-		"fileType": 16,
+	"\/sass\/animate\/bouncing_exits\/bounceOutLeft.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutLeft.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/bounceOutLeft.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/bouncing_exits\/bounceOutRight.css": {
-		"fileType": 16,
+	"\/sass\/animate\/bouncing_exits\/bounceOutRight.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutRight.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutRight.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/bounceOutRight.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/bouncing_exits\/bounceOutUp.css": {
-		"fileType": 16,
+	"\/sass\/animate\/bouncing_exits\/bounceOutUp.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutUp.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/bouncing_exits\/bounceOutUp.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/bounceOutUp.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/sass\/animate\/fading_entrances\/fadeIn.scss": {
 		"createSourceMap": 0,
@@ -659,86 +748,149 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOut.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOut.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOut.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOut.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOut.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutDown.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutDown.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutDown.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutDown.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutDown.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutDownBig.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutDownBig.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutDownBig.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutDownBig.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutDownBig.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutLeft.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutLeft.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutLeft.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutLeft.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutLeftBig.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutLeftBig.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutLeftBig.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutLeftBig.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutLeftBig.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutRight.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutRight.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutRight.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutRight.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutRight.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutRightBig.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutRightBig.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutRightBig.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutRightBig.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutRightBig.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutUp.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutUp.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutUp.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutUp.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutUp.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/fading_exits\/fadeOutUpBig.css": {
-		"fileType": 16,
+	"\/sass\/animate\/fading_exits\/fadeOutUpBig.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutUpBig.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/fading_exits\/fadeOutUpBig.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/fadeOutUpBig.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/sass\/animate\/flippers\/flip.scss": {
 		"createSourceMap": 0,
@@ -1076,41 +1228,69 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/animate\/sliding_exits\/slideOutDown.css": {
-		"fileType": 16,
+	"\/sass\/animate\/sliding_exits\/slideOutDown.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutDown.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutDown.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/slideOutDown.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/sliding_exits\/slideOutLeft.css": {
-		"fileType": 16,
+	"\/sass\/animate\/sliding_exits\/slideOutLeft.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutLeft.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/slideOutLeft.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/sliding_exits\/slideOutRight.css": {
-		"fileType": 16,
+	"\/sass\/animate\/sliding_exits\/slideOutRight.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutRight.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutRight.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/slideOutRight.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/sliding_exits\/slideOutUp.css": {
-		"fileType": 16,
+	"\/sass\/animate\/sliding_exits\/slideOutUp.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutUp.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/sliding_exits\/slideOutUp.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/slideOutUp.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/sass\/animate\/specials\/hinge.scss": {
 		"createSourceMap": 0,
@@ -1240,50 +1420,85 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/animate\/zooming_exits\/zoomOut.css": {
-		"fileType": 16,
+	"\/sass\/animate\/zooming_exits\/zoomOut.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOut.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOut.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/zoomOut.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/zooming_exits\/zoomOutDown.css": {
-		"fileType": 16,
+	"\/sass\/animate\/zooming_exits\/zoomOutDown.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutDown.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutDown.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/zoomOutDown.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/zooming_exits\/zoomOutLeft.css": {
-		"fileType": 16,
+	"\/sass\/animate\/zooming_exits\/zoomOutLeft.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutLeft.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/zoomOutLeft.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/zooming_exits\/zoomOutRight.css": {
-		"fileType": 16,
+	"\/sass\/animate\/zooming_exits\/zoomOutRight.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutRight.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutRight.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/zoomOutRight.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
-	"\/sass\/animate\/zooming_exits\/zoomOutUp.css": {
-		"fileType": 16,
+	"\/sass\/animate\/zooming_exits\/zoomOutUp.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutUp.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/sass\/animate\/zooming_exits\/zoomOutUp.scss",
+		"outputAbbreviatedPath": "\/sass\/animate\/css\/zoomOutUp.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/sass\/demo1.sass": {
 		"createSourceMap": 0,

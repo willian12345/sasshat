@@ -22,13 +22,30 @@
 //A
 @mixin align-content($value)
 	//flex-start | flex-end | center | space-between | space-around | stretch
-	+prefixer($value)
+	+prefixer(align-content, $value)
+
 @mixin align-items($value)
+	/*垂直居中*/	
 	//flex-start | flex-end | center | baseline | stretch
-	+prefixer($value)
+	/*老版本语法*/
+	-webkit-box-align: $value
+	-moz-box-align: $value
+	/*混合版本语法*/
+	-ms-flex-align: $value
+	/*新版本语法*/
+	-webkit-align-items: $value
+	align-items: $value
 @mixin justify-content($value)
+	/*水平居中*/
 	//flex-start | flex-end | center | space-between | space-around
-	+prefixer($value)
+	/*老版本语法*/
+	-webkit-box-pack: $value
+	-moz-box-pack: $value
+	/*混合版本语法*/
+	-ms-flex-pack: $value
+	/*新版本语法*/
+	-webkit-justify-content: $value
+	justify-content: $value
 ///align-self
 @mixin animation($value...)
 	// animation-name | animation-duration | animation-timing-function | animation-delay | animation-iteration-count | animation-direction | animation-fill-mode
@@ -186,6 +203,7 @@
 @mixin opacity($value)
 	+prefixer(opacity, $value)
 @mixin order($value)
+	// 在旧的规范中，设置顺序（box-ordinal-group）属性值只接受一个正整数
 	-webkit-box-ordinal-group: $value
 	-moz-box-ordinal-group: $value   
 	-ms-flex-order: $value
@@ -196,14 +214,14 @@
 	+prefixer(perspective, $value)
 @mixin perspective-origin($value...)
 	+prefixer(perspective-origin, $value)
-@mixin placeholder()
-	input::-webkit-input-placeholder
+@mixin placeholder($inputQuery)
+	#{$inputQuery}::-webkit-input-placeholder
 		@content
-	input::-moz-input-placeholder
+	#{$inputQuery}::-moz-input-placeholder
 		@content
-	input::-ms-input-placeholder
+	#{$inputQuery}::-ms-input-placeholder
 		@content
-	input::input-placeholder
+	#{$inputQuery}::input-placeholder
 		@content
 
 
