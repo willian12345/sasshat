@@ -164,6 +164,9 @@
 @mixin flex-wrap($value)
 	// nowrap | wrap | wrap-reverse
 	+prefixer(flex-wrap, $value)
+@mixin flex-direction($value)
+	// row | row-reverse | column | column-reverse
+	+prefixer(flex-direction, $value)
 @mixin font-face($fontFamily, $fontName, $path:'')
 	$_path:''
 	@if $path
