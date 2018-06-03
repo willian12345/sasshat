@@ -135,37 +135,33 @@ table {
 ul {
   list-style: none; }
 
-h1, h2, h3, h4, ul, body, dl, dd, p {
+h1, h2, h3, h4, h5, ul, body, dl, dd, p {
   margin: 0;
   padding: 0; }
+
+i {
+  font-style: normal; }
 
 a, img {
   -webkit-touch-callout: none; }
 
+a {
+  text-decoration: none;
+  outline: 0; }
+
 img {
   vertical-align: middle; }
+
+a, a:hover {
+  text-decoration: none; }
 
 html, body {
   -webkit-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
 
-body {
-  -webkit-backface-visibility: hidden; }
-
-.animated {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-  .animated.hinge {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    animation-duration: 2s; }
-
-/* Sasshat Sass Library
+/*
+ * Sasshat Sass Library
  * Author: wang.2gou
  * Email: willian12345@126.com
  * Date: 2014-06-06
@@ -188,12 +184,13 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: black url(../imgs/bg1.png) no-repeat;
+  background: #000 url(../imgs/bg1.png) no-repeat;
   background-size: 100% 100%; }
 
 ul:before, ul:after {
   content: " ";
   display: table; }
+
 ul:after {
   clear: both; }
 
@@ -206,6 +203,7 @@ li {
   font-family: "rsxfont";
   src: url("icon-font/iconfont.eot");
   src: url("icon-font/iconfont.eot?#iefix") format("embedded-opentype"), url("icon-font/iconfont.woff") format("woff"), url("icon-font/iconfont.ttf") format("truetype"), url("icon-font/fontName.svg#iconfont") format("svg"); }
+
 .iconfont {
   font-family: "rsxfont" !important;
   font-size: 16px;

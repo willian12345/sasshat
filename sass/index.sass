@@ -1,5 +1,4 @@
-$use-rollIn 		:	true
-@import '_normalize.scss','animate/_animate.scss','_sasshat.sass'
+@import '_normalize.scss','_sasshat.sass'
 
 
 *,
@@ -34,3 +33,10 @@ li
 	text-align: center
 	font-size: 12px
 	color: #999
+
+.t
+	z-index: 10
+	+cover()
+	// +coverFixed(#000)
+	// +center(100px, 200px)
+	// +centerHard(100px, 200px)

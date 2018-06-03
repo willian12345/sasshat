@@ -160,7 +160,8 @@ html, body {
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
 
-/* Sasshat Sass Library
+/*
+ * Sasshat Sass Library
  * Author: wang.2gou
  * Email: willian12345@126.com
  * Date: 2014-06-06
@@ -183,6 +184,7 @@ html, body {
     transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
   to {
     transform: perspective(400px); } }
+
 .flipInX {
   backface-visibility: visible !important;
   animation-name: flipInX; }
@@ -202,6 +204,7 @@ html, body {
     transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
   to {
     transform: perspective(400px); } }
+
 .flipInY {
   backface-visibility: visible !important;
   animation-name: flipInY; }
@@ -292,46 +295,55 @@ body {
 .row-list.flipY li {
   height: 100px;
   line-height: 100px; }
+
 .row-list.flipY li:nth-child(8) {
   -webkit-animation: flipInY 0.5s 0s ease;
   -moz-animation: flipInY 0.5s 0s ease;
   -ms-animation: flipInY 0.5s 0s ease;
   animation: flipInY 0.5s 0s ease; }
+
 .row-list.flipY li:nth-child(7) {
   -webkit-animation: flipInY 0.5s 0.1s ease;
   -moz-animation: flipInY 0.5s 0.1s ease;
   -ms-animation: flipInY 0.5s 0.1s ease;
   animation: flipInY 0.5s 0.1s ease; }
+
 .row-list.flipY li:nth-child(6) {
   -webkit-animation: flipInY 0.5s 0.2s ease;
   -moz-animation: flipInY 0.5s 0.2s ease;
   -ms-animation: flipInY 0.5s 0.2s ease;
   animation: flipInY 0.5s 0.2s ease; }
+
 .row-list.flipY li:nth-child(5) {
   -webkit-animation: flipInY 0.5s 0.3s ease;
   -moz-animation: flipInY 0.5s 0.3s ease;
   -ms-animation: flipInY 0.5s 0.3s ease;
   animation: flipInY 0.5s 0.3s ease; }
+
 .row-list.flipY li:nth-child(4) {
   -webkit-animation: flipInY 0.5s 0.4s ease;
   -moz-animation: flipInY 0.5s 0.4s ease;
   -ms-animation: flipInY 0.5s 0.4s ease;
   animation: flipInY 0.5s 0.4s ease; }
+
 .row-list.flipY li:nth-child(3) {
   -webkit-animation: flipInY 0.5s 0.5s ease;
   -moz-animation: flipInY 0.5s 0.5s ease;
   -ms-animation: flipInY 0.5s 0.5s ease;
   animation: flipInY 0.5s 0.5s ease; }
+
 .row-list.flipY li:nth-child(2) {
   -webkit-animation: flipInY 0.5s 0.6s ease;
   -moz-animation: flipInY 0.5s 0.6s ease;
   -ms-animation: flipInY 0.5s 0.6s ease;
   animation: flipInY 0.5s 0.6s ease; }
+
 .row-list.flipY li:nth-child(1) {
   -webkit-animation: flipInY 0.5s 0.7s ease;
   -moz-animation: flipInY 0.5s 0.7s ease;
   -ms-animation: flipInY 0.5s 0.7s ease;
   animation: flipInY 0.5s 0.7s ease; }
+
 .row-list.flipY li {
   -webkit-animation-fill-mode: both !important;
   -moz-animation-fill-mode: both !important;

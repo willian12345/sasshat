@@ -160,7 +160,8 @@ html, body {
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
 
-/* Sasshat Sass Library
+/*
+ * Sasshat Sass Library
  * Author: wang.2gou
  * Email: willian12345@126.com
  * Date: 2014-06-06
@@ -186,6 +187,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 @-moz-keyframes slideRightIn3d {
   0% {
     -webkit-transform: rotateY(80deg) translate3d(1000%, 0, 320px);
@@ -204,6 +206,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 @-ms-keyframes slideRightIn3d {
   0% {
     -webkit-transform: rotateY(80deg) translate3d(1000%, 0, 320px);
@@ -222,6 +225,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 @keyframes slideRightIn3d {
   0% {
     -webkit-transform: rotateY(80deg) translate3d(1000%, 0, 320px);
@@ -240,6 +244,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 @-webkit-keyframes slideLeftIn3d {
   0% {
     -webkit-transform: rotateY(-80deg) translate3d(-1000%, 0, 320px);
@@ -258,6 +263,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 @-moz-keyframes slideLeftIn3d {
   0% {
     -webkit-transform: rotateY(-80deg) translate3d(-1000%, 0, 320px);
@@ -276,6 +282,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 @-ms-keyframes slideLeftIn3d {
   0% {
     -webkit-transform: rotateY(-80deg) translate3d(-1000%, 0, 320px);
@@ -294,6 +301,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 @keyframes slideLeftIn3d {
   0% {
     -webkit-transform: rotateY(-80deg) translate3d(-1000%, 0, 320px);
@@ -312,6 +320,7 @@ html, body {
     -ms-transform: rotateY(0deg) translate3d(0%, 0, 0);
     transform: rotateY(0deg) translate3d(0%, 0, 0);
     opacity: 1; } }
+
 *,
 *:before,
 *:after {

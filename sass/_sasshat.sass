@@ -167,8 +167,8 @@
 @mixin flex-direction($value)
 	// row | row-reverse | column | column-reverse
 	+prefixer(flex-direction, $value)
-@mixin font-face($fontFamily, $fontName, $path:'')
-	$_path:''
+@mixin font-face($fontFamily, $fontName, $path: '')
+	$_path: ''
 	@if $path
 		$_path: $path + '/'
 	@font-face
@@ -285,12 +285,14 @@
 @mixin text-shadow($value...)
 	+prefixer(text-shadow, $value)
 
+// ##############  功能区  functions ################################
+
 // For animate elements step by step
-@mixin dominoAnimation($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay:0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
+@mixin dominoAnimation($loopElement, $frameName,  $start:1, $end:5, $duration:.5s, $delay: 0, $delayInterval:.1, $timmingFuc:ease, $applyElement: false)
 	$startIndex: $start
-	$delay:strip-units($delay)
-	$delayInterval:strip-units($delayInterval)
-	$j:0
+	$delay: strip-units($delay)
+	$delayInterval: strip-units($delayInterval)
+	$j: 0
 	@for $i from $startIndex through $end
 		$j: $j+1
 		#{$loopElement}:nth-child(#{$i})
@@ -312,3 +314,61 @@
 	@if not($applyElement)
 		#{$loopElement}
 			+animation-fill-mode(both!important)
+
+
+@mixin centerX($width)
+	position: absolute
+	left: 50%
+	+translateX(-50%)
+	width: $width
+
+@mixin centerXHard($width)
+	position: absolute
+	left: 50%
+	margin-left: $width / -2
+	width: $width
+
+
+// 绝对剧中元素, 使用transform属性
+// center element absolute by transform property
+@mixin center($width, $height)
+	position: absolute
+	left: 50%
+	top: 50%
+	width: $width
+	height: $height
+	+translate(-50%, -50%)
+	// @if $top != 50%
+	// 	+translateX(-50%)
+	// @else
+	// 	+translate(-50%, -50%)
+	
+// 绝对剧中元素, 使用margin属性
+// center element absolute by margin property
+@mixin centerHard($width, $height)
+	position: absolute
+	left: 50%
+	top: 50%
+	margin-left: $width / -2
+	margin-top: $height / -2
+	width: $width
+	height: $height
+// 百分百覆盖
+// cover 100% over the element or area
+@mixin cover($coverColor: false, $isFixed: false)
+	@if $isFixed
+		position: fixed
+	@else
+		position: absolute
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+
+	@if $coverColor
+		background: $coverColor
+@mixin coverFixed($coverColor)
+	+cover($coverColor, $isFixed: true)
+

@@ -160,7 +160,8 @@ html, body {
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
 
-/* Sasshat Sass Library
+/*
+ * Sasshat Sass Library
  * Author: wang.2gou
  * Email: willian12345@126.com
  * Date: 2014-06-06
@@ -184,6 +185,7 @@ html, body {
   to {
     transform: perspective(400px);
     animation-timing-function: ease-in; } }
+
 .animated.flip {
   backface-visibility: visible;
   animation-name: flip; }
@@ -195,6 +197,7 @@ html, body {
   to {
     opacity: 1;
     transform: none; } }
+
 .fadeInUpBig {
   animation-name: fadeInUpBig; }
 
@@ -205,6 +208,7 @@ html, body {
   to {
     opacity: 1;
     transform: none; } }
+
 .fadeInDown {
   animation-name: fadeInDown; }
 
@@ -227,6 +231,7 @@ body {
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
+
 .clearfix:after {
   clear: both; }
 
